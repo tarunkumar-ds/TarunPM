@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarun Kumar E — Product Management Portfolio | APM &amp; Product Analyst</title>
+  <meta name="description" content="Interactive Product Management & Product Analyst portfolio of Tarun Kumar E — BCA (Data Science) graduate from SRM Institute of Science and Technology (9.35 GPA)." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Anton, Fraunces, Caveat, Space Grotesk & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=Fraunces:opsz,wght@9..144,800;9..144,900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            matGreen: '#1E6B43',
+            deskCrimson: '#8E1E1E',
+            navyDesk: '#1B2A4A',
+            manilaLight: '#EFE5CE',
+            manilaMid: '#E3D2B4',
+            terracotta: '#C85A32',
+            terracottaDark: '#A64420',
+            zineMustard: '#F4C414',
+            zineInk: '#1B1917',
+            typewriterRed: '#C82828',
+            cardboard: '#C49A6C',
+            cardboardDark: '#9E764B',
+            lockerBlue: '#3A6EA5',
+            crosswordCream: '#F4EFE4',
+            paperWhite: '#FAF8F5',
+          },
+          fontFamily: {
+            display: ['Anton', 'Impact', 'sans-serif'],
+            retro: ['Fraunces', 'Georgia', 'serif'],
+            hand: ['Caveat', 'cursive'],
+            sans: ['Space Grotesk', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --mat-green: #1D6840;
+      --navy-desk: #1B2A4A;
+      --manila-light: #EFE5CE;
+      --manila-mid: #E3D2B4;
+      --terracotta: #C85A32;
+      --zine-mustard: #F4C414;
+      --cardboard: #C59B6D;
+      --ink: #1A1817;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #18181B;
+      color: var(--ink);
+      font-family: 'Space Grotesk', sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* 1. GREEN ARCHITECT'S CUTTING MAT TEXTURE (#desk-hero) */
+    .crimson-desk-surface {
+      background-color: #7F1D1D;
+      background-image:
+        radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(0, 0, 0, 0.35) 0%, transparent 50%),
+        repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.04) 0px, rgba(0, 0, 0, 0.04) 2px, transparent 2px, transparent 8px);
+    }
+
+    .cutting-mat-surface {
+      background-color: var(--mat-green);
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.24) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.24) 1px, transparent 1px),
+        linear-gradient(to right, rgba(255, 255, 255, 0.09) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.09) 1px, transparent 1px);
+      background-size: 64px 64px, 64px 64px, 16px 16px, 16px 16px;
+      border: 4px solid #124228;
+      box-shadow:
+        inset 0 0 42px rgba(10, 42, 24, 0.55),
+        0 20px 44px rgba(0, 0, 0, 0.45);
+    }
+
+    .crumpled-paper-title {
+      background-color: #FAF8F5;
+      background-image:
+        linear-gradient(135deg, rgba(0,0,0,0.035) 0%, transparent 35%, rgba(0,0,0,0.04) 70%, transparent 100%),
+        linear-gradient(45deg, rgba(255,255,255,0.8) 0%, rgba(235,230,220,0.4) 100%);
+      clip-path: polygon(
+        1% 3%, 14% 0%, 31% 2%, 52% 0%, 73% 3%, 89% 1%, 99% 4%,
+        100% 24%, 98% 49%, 100% 76%, 98% 97%,
+        82% 100%, 61% 98%, 39% 100%, 19% 97%, 2% 99%,
+        0% 74%, 2% 48%, 0% 22%
+      );
+      filter: drop-shadow(0 12px 18px rgba(0, 0, 0, 0.36));
+    }
+
+    .graph-badge {
+      background-color: #FFFDF9;
+      background-image:
+        linear-gradient(to right, rgba(59, 130, 246, 0.2) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(59, 130, 246, 0.2) 1px, transparent 1px);
+      background-size: 12px 12px;
+    }
+
+    /* 2. DEEP NAVY DESK MAT & RETRO MANILA FILE DRAWER (#noted-zine) */
+    .navy-desk-mat {
+      background-color: #1B2A4A;
+      background-image:
+        radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.06) 0%, transparent 45%),
+        radial-gradient(circle at 82% 78%, rgba(9, 15, 30, 0.55) 0%, transparent 55%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+      box-shadow: inset 0 0 90px rgba(9, 16, 32, 0.72);
+    }
+
+    .stitched-desk-border {
+      border: 2px dashed rgba(239, 229, 206, 0.35);
+      box-shadow: 0 22px 48px rgba(7, 12, 24, 0.55);
+    }
+
+    .noted-navy-cutout {
+      color: #1A1817;
+      background-color: #EFE5CE;
+      border: 3px solid #1A1817;
+      box-shadow: 8px 8px 0px #C85A32, 12px 12px 0px #0F172A;
+      clip-path: polygon(
+        1% 4%, 18% 0%, 42% 2%, 68% 0%, 92% 3%, 99% 2%,
+        100% 35%, 98% 68%, 100% 97%,
+        76% 100%, 48% 98%, 22% 100%, 2% 96%,
+        0% 62%, 2% 32%
+      );
+    }
+
+    .manila-tab {
+      transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s ease, color 0.2s ease;
+      cursor: pointer;
+    }
+
+    .manila-tab:hover {
+      transform: translateY(-2px);
+    }
+
+    .manila-folder-body {
+      background-color: #EFE5CE;
+      background-image:
+        repeating-linear-gradient(
+          0deg,
+          rgba(166, 68, 32, 0.03) 0px,
+          rgba(166, 68, 32, 0.03) 1px,
+          transparent 1px,
+          transparent 6px
+        ),
+        linear-gradient(180deg, #F5ECDA 0%, #E3D2B4 100%);
+      border: 3px solid #1A1817;
+      box-shadow: 8px 8px 0px #0F172A;
+    }
+
+    .manila-back-sheet {
+      background-color: #E3D2B4;
+      border: 3px solid #1A1817;
+    }
+
+    /* 3. CARDBOARD BOX & LOCKER TEXTURES (#backlog-box) */
+    .cardboard-surface {
+      background-color: #C49A6C;
+      background-image:
+        repeating-linear-gradient(
+          90deg,
+          rgba(110, 74, 38, 0.07) 0px,
+          rgba(110, 74, 38, 0.07) 2px,
+          transparent 2px,
+          transparent 7px
+        ),
+        linear-gradient(180deg, rgba(255,255,255,0.12) 0%, rgba(0,0,0,0.12) 100%);
+      border: 3px solid #5C3D1E;
+      box-shadow: inset 0 0 28px rgba(72, 46, 20, 0.35), 8px 8px 0px #1A1817;
+    }
+
+    .locker-surface {
+      background-color: #36689E;
+      background-image:
+        linear-gradient(90deg, rgba(0,0,0,0.22) 0px, transparent 6px, transparent 94%, rgba(255,255,255,0.12) 100%);
+      background-size: 140px 100%;
+    }
+
+    .crossword-bg {
+      background-color: #F4EFE4;
+      background-image:
+        linear-gradient(to right, rgba(26, 24, 23, 0.14) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(26, 24, 23, 0.14) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    /* Kraft Paper Envelope */
+    .kraft-envelope {
+      background-color: #B88A58;
+      background-image:
+        repeating-linear-gradient(
+          -35deg,
+          rgba(78, 50, 22, 0.06) 0px,
+          rgba(78, 50, 22, 0.06) 2px,
+          transparent 2px,
+          transparent 6px
+        );
+      border: 3px solid #1A1817;
+      box-shadow: 10px 10px 0px #1A1817;
+    }
+
+    /* Pegboard Tool Tray (#field-kit) */
+    .pegboard-tray {
+      background-color: #23272E;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+    }
+
+    .tool-artifact-card {
+      transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.22s ease, opacity 0.2s ease;
+    }
+    .tool-artifact-card:hover {
+      transform: translateY(-4px) rotate(0deg) !important;
+      box-shadow: 8px 8px 0px #F4C414;
+    }
+    .tool-artifact-card.is-dimmed {
+      opacity: 0.32;
+      transform: scale(0.98) !important;
+    }
+
+    /* Tactile Maker Tool Hover */
+    .maker-tool {
+      transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), filter 0.28s ease;
+      cursor: pointer;
+    }
+    .maker-tool:hover {
+      transform: translateY(-6px) scale(1.05) rotate(0deg) !important;
+      filter: drop-shadow(0 12px 16px rgba(0,0,0,0.42));
+    }
+
+    /* Typewriter Cursor Blink */
+    .cursor-blink {
+      display: inline-block;
+      width: 2px;
+      height: 1.1em;
+      background-color: #C82828;
+      vertical-align: text-bottom;
+      animation: blink 0.85s steps(2, start) infinite;
+    }
+    @keyframes blink {
+      to { visibility: hidden; }
+    }
+
+    /* STRICTLY HIDDEN-BY-DEFAULT MODALS */
+    .strict-modal {
+      display: none;
+    }
+    .strict-modal.is-open {
+      display: flex;
+    }
+
+    /* Toast */
+    #toast {
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    #toast.hide {
+      opacity: 0;
+      transform: translate(-50%, 16px);
+      pointer-events: none;
+    }
+    #toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+      pointer-events: auto;
+    }
+
+    /* Print Resume Support */
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #resumePrintArea, #resumePrintArea * {
+        visibility: visible;
+      }
+      #resumePrintArea {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #FFFFFF !important;
+        padding: 0 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    /* ===== ZINE CUT-AND-REVEAL INTRO ===== */
+    body.intro-lock { overflow: hidden; }
+    #zine-intro { position: fixed; inset: 0; z-index: 9999; font-family: 'JetBrains Mono', monospace; }
+    #zine-intro .half {
+      position: absolute; left: 0; right: 0; height: 50.2%;
+      background-color: #1D6840;
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,.22) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,.22) 1px, transparent 1px),
+        linear-gradient(to right, rgba(255,255,255,.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,.08) 1px, transparent 1px);
+      background-size: 64px 64px, 64px 64px, 16px 16px, 16px 16px;
+      box-shadow: inset 0 0 90px rgba(10,42,24,.7);
+      transition: transform .9s cubic-bezier(.76,0,.24,1);
+    }
+    #zine-intro .half.top { top: 0; border-bottom: 3px dashed #F4C414; }
+    #zine-intro .half.bot { bottom: 0; background-position: 0 -50vh; }
+    #zine-intro.cut .half.top { transform: translateY(-101%) rotate(-1.2deg); }
+    #zine-intro.cut .half.bot { transform: translateY(101%) rotate(1.2deg); }
+    #zine-intro.cut .stage { opacity: 0; transform: scale(.9); transition: opacity .35s ease, transform .5s ease; }
+    #zine-intro.gone { display: none; }
+
+    #zine-intro .stage {
+      position: absolute; inset: 0; z-index: 3; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; padding: 1rem; text-align: center;
+    }
+    .zi-tag { color: rgba(255,255,255,.8); font-size: 11px; letter-spacing: .25em; font-weight: 700;
+      margin-bottom: 1.5rem; opacity: 0; animation: ziFade .6s .1s forwards; }
+    .zi-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 8px; margin-bottom: .6rem; }
+    .zi-letter {
+      display: inline-block; font-family: 'Anton', Impact, sans-serif;
+      font-size: clamp(2rem, 8.5vw, 5.5rem); line-height: 1; padding: .08em .22em;
+      border: 3px solid #1B1917; box-shadow: 4px 4px 0 #1B1917;
+      opacity: 0; transform: translateY(-120vh) rotate(var(--r0));
+      animation: ziDrop .75s cubic-bezier(.34,1.56,.64,1) forwards;
+      animation-delay: var(--d);
+    }
+    .zi-letter.serif { font-family: 'Fraunces', Georgia, serif; font-weight: 900; }
+    .zi-letter.mono { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: clamp(1.8rem, 7.5vw, 4.8rem); }
+    .zi-space { width: clamp(.8rem, 3vw, 2rem); }
+    @keyframes ziDrop {
+      0% { opacity: 1; transform: translateY(-120vh) rotate(var(--r0)); }
+      100% { opacity: 1; transform: translateY(0) rotate(var(--r1)); }
+    }
+    @keyframes ziFade { to { opacity: 1; } }
+
+    .zi-role {
+      margin-top: 1.4rem; color: #FAF8F5; background: #1B1917; padding: .55rem 1rem;
+      font-size: clamp(11px, 2.6vw, 15px); font-weight: 600; letter-spacing: .12em;
+      border-left: 6px solid #F4C414; min-height: 2.4rem; opacity: 0; animation: ziFade .3s 1.9s forwards;
+    }
+    .zi-role .caret { display: inline-block; width: .6ch; background: #F4C414; margin-left: 2px; animation: ziBlink .6s steps(1) infinite; }
+    @keyframes ziBlink { 50% { opacity: 0; } }
+
+    .zi-bar { margin-top: 1.6rem; width: min(320px, 70vw); height: 12px; border: 2px solid #FAF8F5; background: rgba(0,0,0,.25); opacity: 0; animation: ziFade .3s 1.9s forwards; }
+    .zi-bar i { display: block; height: 100%; width: 0; background: repeating-linear-gradient(45deg, #F4C414 0 8px, #C85A32 8px 16px); animation: ziFill 1.6s 2s cubic-bezier(.5,0,.2,1) forwards; }
+    @keyframes ziFill { to { width: 100%; } }
+    .zi-pct { margin-top: .5rem; color: rgba(255,255,255,.8); font-size: 11px; letter-spacing: .2em; opacity: 0; animation: ziFade .3s 1.9s forwards; }
+
+    /* scissors sweep along the cut line */
+    .zi-cutline { position: absolute; left: 0; right: 0; top: 50%; height: 0; z-index: 4; pointer-events: none; }
+    .zi-scissors { position: absolute; top: -18px; left: -60px; font-size: 34px; line-height: 1; opacity: 0; filter: drop-shadow(0 2px 2px rgba(0,0,0,.5)); }
+    #zine-intro.cutting .zi-scissors { animation: ziSnip .75s linear forwards; }
+    @keyframes ziSnip { 0% { left: -60px; opacity: 1; } 100% { left: 105%; opacity: 1; } }
+    .zi-dash { position: absolute; left: 0; top: -1px; height: 0; border-top: 3px dashed #F4C414; width: 0; }
+    #zine-intro.cutting .zi-dash { animation: ziDash .75s linear forwards; }
+    @keyframes ziDash { to { width: 100%; } }
+
+    #zi-skip {
+      position: absolute; right: 14px; bottom: 14px; z-index: 5; background: #FAF8F5; color: #1B1917;
+      border: 2px solid #1B1917; box-shadow: 3px 3px 0 #1B1917; padding: 6px 12px; font-size: 11px;
+      font-weight: 700; letter-spacing: .15em; cursor: pointer; font-family: inherit;
+    }
+    #zi-skip:hover { background: #F4C414; }
+    #zine-intro.cut #zi-skip { display: none; }
+
+    /* hero content pops in after the reveal */
+    body.intro-done #desk-hero .max-w-6xl { animation: ziHero .8s cubic-bezier(.22,1,.36,1) both; }
+    @keyframes ziHero { from { opacity: 0; transform: translateY(40px) scale(.97); } to { opacity: 1; transform: none; } }
+
+    @media (prefers-reduced-motion: reduce) {
+      #zine-intro { display: none !important; }
+      body.intro-lock { overflow: auto; }
+    }
+  </style>
+</head>
+<body class="selection:bg-zineMustard selection:text-zineInk">
+
+  <!-- ZINE CUT-AND-REVEAL INTRO -->
+  <div id="zine-intro" role="presentation" aria-hidden="true">
+    <div class="half top"></div>
+    <div class="half bot"></div>
+    <div class="zi-cutline"><div class="zi-dash"></div><div class="zi-scissors">✂️</div></div>
+    <div class="stage">
+      <div class="zi-tag">// ISSUE #01 · THE PRODUCT MANAGER ZINE</div>
+      <div class="zi-row" id="zi-name1"></div>
+      <div class="zi-row" id="zi-name2"></div>
+      <div class="zi-role"><span id="zi-typed"></span><span class="caret">&nbsp;</span></div>
+      <div class="zi-bar"><i></i></div>
+      <div class="zi-pct" id="zi-pct">ASSEMBLING ZINE… 0%</div>
+    </div>
+    <button id="zi-skip" type="button">SKIP ▸</button>
+  </div>
+
+
+  <!-- =====================================================================
+       1. TOP STICKY OS-STYLE NAVIGATION BAR
+       ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-[#F7F5EE] border-b-2 border-zineInk shadow-md">
+    <nav aria-label="Primary Portfolio Navigation" class="max-w-7xl mx-auto px-3 sm:px-6 h-14 flex items-center justify-between gap-2">
+      <!-- Left: OS Traffic-Light Dots + Brand -->
+      <div class="flex items-center gap-3 shrink-0">
+        <div class="flex items-center gap-1.5" aria-hidden="true">
+          <span class="w-3 h-3 rounded-full bg-[#FF5F56] border border-black/20"></span>
+          <span class="w-3 h-3 rounded-full bg-[#FFBD2E] border border-black/20"></span>
+          <span class="w-3 h-3 rounded-full bg-[#27C93F] border border-black/20"></span>
+        </div>
+        <a href="#desk-hero" class="hidden md:inline-flex items-center gap-1.5 font-display text-lg tracking-wide text-zineInk uppercase">
+          <span class="px-1.5 py-0.5 bg-typewriterRed text-white rounded-xs text-xs">PM</span>
+          <span>TARUN KUMAR E</span>
+        </a>
+      </div>
+
+      <!-- Center: Active Section Pills -->
+      <div class="flex items-center gap-1 sm:gap-1.5 overflow-x-auto py-1">
+        <a href="#desk-hero" data-nav="desk-hero" class="nav-pill px-2.5 py-1 rounded bg-zineMustard border border-zineInk font-mono text-[10px] sm:text-[11px] font-bold uppercase transition-colors shrink-0">
+          01 WORKBENCH
+        </a>
+        <a href="#noted-zine" data-nav="noted-zine" class="nav-pill px-2.5 py-1 rounded bg-white border border-zineInk font-mono text-[10px] sm:text-[11px] font-bold uppercase hover:bg-zineMustard transition-colors shrink-0">
+          02 NOTED ARCHIVE
+        </a>
+        <a href="#backlog-box" data-nav="backlog-box" class="nav-pill px-2.5 py-1 rounded bg-white border border-zineInk font-mono text-[10px] sm:text-[11px] font-bold uppercase hover:bg-zineMustard transition-colors shrink-0">
+          03 CASE BOXES
+        </a>
+        <a href="#crossword-about" data-nav="crossword-about" class="nav-pill px-2.5 py-1 rounded bg-white border border-zineInk font-mono text-[10px] sm:text-[11px] font-bold uppercase hover:bg-zineMustard transition-colors shrink-0">
+          04 CROSSWORD
+        </a>
+        <a href="#field-kit" data-nav="field-kit" class="nav-pill px-2.5 py-1 rounded bg-white border border-zineInk font-mono text-[10px] sm:text-[11px] font-bold uppercase hover:bg-zineMustard transition-colors shrink-0">
+          05 FIELD KIT
+        </a>
+        <a href="#kraft-contact" data-nav="kraft-contact" class="nav-pill px-2.5 py-1 rounded bg-white border border-zineInk font-mono text-[10px] sm:text-[11px] font-bold uppercase hover:bg-zineMustard transition-colors shrink-0">
+          06 CONTACT
+        </a>
+      </div>
+
+      <!-- Right: RESUME PDF Button -->
+      <div class="flex items-center gap-2 shrink-0">
+        <button
+          type="button"
+          onclick="openResumeModal()"
+          class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-typewriterRed text-white border-2 border-zineInk font-mono text-[10px] sm:text-[11px] font-bold uppercase shadow-[2px_2px_0px_#1A1817] hover:bg-zineInk transition-colors cursor-pointer"
+        >
+          <span>📄 RESUME PDF</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =====================================================================
+         2. HERO SECTION (#desk-hero): GREEN ARCHITECT'S CUTTING MAT ON CRIMSON DESK
+         ===================================================================== -->
+    <section id="desk-hero" class="crimson-desk-surface py-10 sm:py-16 px-3 sm:px-6 md:px-10 border-b-4 border-zineInk relative overflow-hidden">
+      <div class="max-w-6xl mx-auto relative">
+
+        <!-- Green Architect's Cutting Mat Board -->
+        <div class="cutting-mat-surface rounded-2xl p-6 sm:p-10 md:p-14 relative overflow-hidden">
+
+          <!-- Cutting Mat Corner Registration Marks -->
+          <div class="flex items-center justify-between font-mono text-[10px] sm:text-xs font-bold text-white/75 tracking-widest uppercase mb-6">
+            <span>SELF-HEALING CUTTING MAT · A1 // 900×600MM</span>
+            <span>SCALE 1:1 · PRODUCT THINKING WORKBENCH</span>
+          </div>
+
+          <!-- Top Interactive Maker Tools Row (Pushpins, Paper Airplane, Dry-Erase Markers) -->
+          <div class="flex flex-wrap items-center justify-between gap-4 mb-6 relative z-20">
+            <!-- Blue Pushpins Cluster -->
+            <button
+              type="button"
+              onclick="showToolToast('Discovery Pins: Always anchor feature ideas to real user friction first.')"
+              class="maker-tool inline-flex items-center gap-2 bg-white/15 backdrop-blur-xs border border-white/30 px-3 py-1.5 rounded-full text-white font-mono text-[11px]"
+              title="Click Blue Pushpins"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="9" cy="8" r="5" fill="#2563EB" stroke="#1E293B" stroke-width="1.5"/>
+                <path d="M9 13L7 21" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="16" cy="10" r="4.5" fill="#3B82F6" stroke="#1E293B" stroke-width="1.5"/>
+                <path d="M16 14.5L18 21" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>DISCOVERY PINS</span>
+            </button>
+
+            <!-- Folded Paper Airplane -->
+            <button
+              type="button"
+              onclick="showToolToast('Rapid Prototyping: Ship small V1 experiments to test hypotheses fast.')"
+              class="maker-tool inline-flex items-center gap-2 bg-white/15 backdrop-blur-xs border border-white/30 px-3 py-1.5 rounded-full text-white font-mono text-[11px]"
+              title="Click Paper Airplane"
+            >
+              <svg width="28" height="24" viewBox="0 0 28 24" fill="none" aria-hidden="true">
+                <polygon points="2,12 26,2 18,22 13,15" fill="#FAF8F5" stroke="#1A1817" stroke-width="1.4"/>
+                <polygon points="13,15 26,2 15,17" fill="#CBD5E1"/>
+              </svg>
+              <span>V1 PROTOTYPE</span>
+            </button>
+
+            <!-- Red & Blue Dry-Erase Markers -->
+            <button
+              type="button"
+              onclick="showToolToast('Whiteboard Framing: Sketch user journeys & system boundaries before writing specs.')"
+              class="maker-tool inline-flex items-center gap-2 bg-white/15 backdrop-blur-xs border border-white/30 px-3 py-1.5 rounded-full text-white font-mono text-[11px]"
+              title="Click Dry-Erase Markers"
+            >
+              <svg width="38" height="22" viewBox="0 0 38 22" fill="none" aria-hidden="true">
+                <rect x="2" y="3" width="26" height="6" rx="2" fill="#FFFFFF" stroke="#1A1817" stroke-width="1.2"/>
+                <rect x="26" y="3" width="9" height="6" rx="1" fill="#DC2626" stroke="#1A1817" stroke-width="1.2"/>
+                <rect x="4" y="13" width="24" height="6" rx="2" fill="#FFFFFF" stroke="#1A1817" stroke-width="1.2"/>
+                <rect x="26" y="13" width="9" height="6" rx="1" fill="#2563EB" stroke="#1A1817" stroke-width="1.2"/>
+              </svg>
+              <span>SPEC MARKERS</span>
+            </button>
+          </div>
+
+          <!-- Centerpiece: Crumpled White Paper Cutout Title + Taped Graph-Paper "2026 APM" Badge -->
+          <div class="relative max-w-3xl mx-auto my-6 sm:my-10">
+            <!-- Blue Masking Tape Top Left -->
+            <div class="w-24 h-6 bg-sky-300/90 border border-zineInk/30 -rotate-12 absolute -top-3 left-6 sm:left-12 z-20 shadow-xs" aria-hidden="true"></div>
+            <!-- Yellow Masking Tape Top Right -->
+            <div class="w-24 h-6 bg-zineMustard/90 border border-zineInk/30 rotate-12 absolute -top-3 right-6 sm:right-12 z-20 shadow-xs" aria-hidden="true"></div>
+
+            <div class="crumpled-paper-title px-6 sm:px-12 py-8 sm:py-11 text-center relative z-10">
+              <span class="inline-block bg-zineInk text-zineMustard font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-xs mb-3">
+                ASSOCIATE PRODUCT MANAGER &amp; PRODUCT ANALYST
+              </span>
+
+              <h1 class="font-display text-5xl sm:text-7xl md:text-8xl text-typewriterRed uppercase tracking-tight leading-[0.92]">
+                PRODUCT PORTFOLIO
+              </h1>
+
+              <p class="font-hand text-3xl sm:text-4xl font-bold text-zineInk mt-2 -rotate-1">
+                by Tarun Kumar E
+              </p>
+
+              <p class="mt-3 font-hand text-2xl sm:text-3xl font-bold text-typewriterRed">
+                &ldquo;Don&rsquo;t just ask <em>how</em> to build it&mdash;start with <em>what</em> to build and <em>why</em>.&rdquo;
+              </p>
+
+              <p class="mt-3 max-w-xl mx-auto text-xs sm:text-sm md:text-base text-zineInk/90 leading-relaxed font-medium">
+                BCA (Data Science) graduate from <strong>SRM Institute of Science and Technology (9.35 GPA)</strong>. I bridge Python, SQL, LLMs, and behavioral analytics with practical product problem-solving—turning complex workflows into clear, trustworthy user experiences.
+              </p>
+
+              <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
+                <a href="#backlog-box" class="px-5 py-2.5 rounded-lg bg-zineMustard text-zineInk font-mono text-xs font-bold uppercase tracking-wider border-2 border-zineInk shadow-[4px_4px_0px_#1A1817] hover:bg-zineInk hover:text-zineMustard transition-colors">
+                  EXPLORE CASE BOXES ↓
+                </a>
+                <a href="#noted-zine" class="px-5 py-2.5 rounded-lg bg-white text-zineInk font-mono text-xs font-bold uppercase tracking-wider border-2 border-zineInk shadow-[4px_4px_0px_#1A1817] hover:bg-sky-100 transition-colors">
+                  OPEN STRATEGY ARCHIVE
+                </a>
+              </div>
+            </div>
+
+            <!-- Taped Graph-Paper "2026 APM" Badge overlapping bottom-right -->
+            <div class="graph-badge border-2 border-zineInk px-4 py-2.5 rounded-sm shadow-[5px_5px_0px_#1A1817] rotate-6 sm:absolute sm:-bottom-5 sm:-right-4 mt-4 sm:mt-0 inline-block z-20">
+              <div class="w-12 h-3.5 bg-pink-300/85 mx-auto -mt-4 mb-1 border border-zineInk/20" aria-hidden="true"></div>
+              <div class="font-mono text-[10px] font-bold text-blue-700 uppercase">COHORT · CHENNAI</div>
+              <div class="font-display text-2xl sm:text-3xl text-zineInk leading-none">2026 APM</div>
+            </div>
+          </div>
+
+          <!-- Bottom Interactive Maker Tools Row (Yellow #2 Pencil, Stainless Ruler, Scissors) -->
+          <div class="mt-10 pt-5 border-t border-white/25 flex flex-wrap items-center justify-between gap-4 relative z-20">
+            <!-- Yellow #2 Pencil -->
+            <button
+              type="button"
+              onclick="showToolToast('Yellow #2 Pencil: Question every assumption before locking a roadmap.')"
+              class="maker-tool inline-flex items-center gap-2 bg-black/25 border border-white/25 px-3 py-1.5 rounded-lg text-white font-mono text-[11px]"
+              title="Click Yellow #2 Pencil"
+            >
+              <svg width="76" height="14" viewBox="0 0 76 14" fill="none" aria-hidden="true">
+                <polygon points="0,7 11,2 11,12" fill="#FDE68A" stroke="#1A1817" stroke-width="1.1"/>
+                <polygon points="0,7 4,5.2 4,8.8" fill="#1A1817"/>
+                <rect x="11" y="2" width="52" height="10" fill="#FACC15" stroke="#1A1817" stroke-width="1.1"/>
+                <rect x="63" y="2" width="11" height="10" rx="1.5" fill="#F472B6" stroke="#1A1817" stroke-width="1.1"/>
+              </svg>
+              <span>#2 PENCIL</span>
+            </button>
+
+            <!-- Stainless Ruler -->
+            <button
+              type="button"
+              onclick="showToolToast('Metric Ruler: Measure behavioral stickiness & retention, not vanity volume.')"
+              class="maker-tool inline-flex items-center gap-2 bg-black/25 border border-white/25 px-3 py-1.5 rounded-lg text-white font-mono text-[11px]"
+              title="Click Stainless Ruler"
+            >
+              <svg width="64" height="16" viewBox="0 0 64 16" fill="none" aria-hidden="true">
+                <rect x="1" y="2" width="62" height="12" rx="1.5" fill="#E2E8F0" stroke="#1A1817" stroke-width="1.2"/>
+                <path d="M10 2V7M18 2V5M26 2V7M34 2V5M42 2V7M50 2V5" stroke="#1A1817" stroke-width="1.2"/>
+              </svg>
+              <span>METRIC RULER</span>
+            </button>
+
+            <!-- Precision Scissors -->
+            <button
+              type="button"
+              onclick="showToolToast('Scope Scissors: Cut feature bloat so V1 solves one core workflow cleanly.')"
+              class="maker-tool inline-flex items-center gap-2 bg-black/25 border border-white/25 px-3 py-1.5 rounded-lg text-white font-mono text-[11px]"
+              title="Click Precision Scissors"
+            >
+              <svg width="26" height="20" viewBox="0 0 26 20" fill="none" aria-hidden="true">
+                <circle cx="6" cy="5" r="3.5" stroke="#60A5FA" stroke-width="2"/>
+                <circle cx="6" cy="15" r="3.5" stroke="#60A5FA" stroke-width="2"/>
+                <path d="M9 7L23 15M9 13L23 5" stroke="#E2E8F0" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span>SCOPE SCISSORS</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         3. SECTION 02 (#noted-zine): RETRO MANILA FOLDER & FILE DRAWER
+         ===================================================================== -->
+    <section id="noted-zine" class="navy-desk-mat py-16 sm:py-24 px-3 sm:px-6 md:px-10 border-b-4 border-zineInk relative overflow-hidden">
+      <div class="max-w-6xl mx-auto stitched-desk-border rounded-3xl p-5 sm:p-10 md:p-12 relative">
+
+        <!-- Oversized Cream Paper Cutout "Noted." Display Typography + Pinned Strategist Memo -->
+        <div class="relative text-center mb-10 sm:mb-12">
+          <div class="noted-navy-cutout inline-block px-8 sm:px-14 py-4 sm:py-5 -rotate-1">
+            <h2 class="font-retro font-black text-7xl sm:text-9xl md:text-[128px] leading-[0.86] tracking-tight select-none text-zineInk">
+              Noted.
+            </h2>
+          </div>
+
+          <!-- Pinned Strategist Memo (Cream Index Card with Yellow Masking Tape & Red Paperclip) -->
+          <div class="relative max-w-2xl mx-auto mt-8 bg-manilaLight text-zineInk border-3 border-zineInk rounded-xl p-5 sm:p-7 -rotate-1 shadow-[8px_8px_0px_#C85A32,12px_12px_0px_#09090B] text-left">
+            <!-- Yellow Masking Tape Strip at Top-Center -->
+            <div class="w-28 h-5 bg-zineMustard/95 border border-zineInk/35 rotate-2 absolute -top-3 left-1/2 -translate-x-1/2 shadow-xs" aria-hidden="true"></div>
+
+            <!-- Red Paperclip SVG Badge at Top-Right -->
+            <div class="hidden sm:flex items-center gap-1.5 bg-paperWhite border-2 border-zineInk px-2.5 py-1 rounded-full shadow-[2px_2px_0px_#1A1817] rotate-3 absolute -top-4 right-5" aria-hidden="true">
+              <svg width="16" height="18" viewBox="0 0 16 18" fill="none">
+                <path d="M5.5 6.5V12.5C5.5 14.1569 6.84315 15.5 8.5 15.5C10.1569 15.5 11.5 14.1569 11.5 12.5V4.5C11.5 2.567 9.933 1 8 1C6.067 1 4.5 2.567 4.5 4.5V11.5" stroke="#C82828" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              <span class="font-mono text-[10px] font-bold uppercase text-typewriterRed">STRATEGIST MEMO</span>
+            </div>
+
+            <div class="font-mono text-[10px] font-bold uppercase tracking-widest text-terracottaDark mb-1">
+              ARCHIVAL NOTE · PRODUCT STRATEGY BOARD
+            </div>
+            <h3 class="font-hand text-3xl sm:text-4xl font-bold text-zineInk leading-tight mb-2">
+              &ldquo;Good products begin with better questions.&rdquo;
+            </h3>
+            <p class="text-xs sm:text-sm md:text-base text-zineInk/90 leading-relaxed mb-4">
+              Most portfolios show what was built. This board shows the bets, trade-offs, and guardrails behind why I built it&mdash;connecting Data Science rigor (<strong>9.35 GPA</strong>) with user-first product thinking.
+            </p>
+
+            <!-- 3 Interactive Quick Filter Chips -->
+            <div class="pt-3 border-t-2 border-dashed border-zineInk/25 flex flex-wrap items-center justify-between gap-2">
+              <span class="font-mono text-[10px] font-bold uppercase text-zineInk/70">FILTER ARCHIVE:</span>
+              <div class="flex flex-wrap gap-1.5" role="group" aria-label="Filter Product Strategy Folders">
+                <button
+                  type="button"
+                  data-memo-filter="all"
+                  onclick="filterStrategistMemo('all')"
+                  class="memo-chip px-3 py-1.5 rounded-lg bg-zineMustard text-zineInk border-2 border-zineInk font-mono text-[11px] font-bold uppercase shadow-[2px_2px_0px_#1A1817] cursor-pointer transition-colors"
+                >
+                  All Bets
+                </button>
+                <button
+                  type="button"
+                  data-memo-filter="ai"
+                  onclick="filterStrategistMemo('ai')"
+                  class="memo-chip px-3 py-1.5 rounded-lg bg-paperWhite text-zineInk border-2 border-zineInk font-mono text-[11px] font-bold uppercase shadow-[2px_2px_0px_#1A1817] hover:bg-zineMustard cursor-pointer transition-colors"
+                >
+                  AI &amp; Guardrails
+                </button>
+                <button
+                  type="button"
+                  data-memo-filter="analytics"
+                  onclick="filterStrategistMemo('analytics')"
+                  class="memo-chip px-3 py-1.5 rounded-lg bg-paperWhite text-zineInk border-2 border-zineInk font-mono text-[11px] font-bold uppercase shadow-[2px_2px_0px_#1A1817] hover:bg-zineMustard cursor-pointer transition-colors"
+                >
+                  Behavioral Analytics
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stacked, Slightly Overlapping Manila File Folders (#EFE5CE & #E3D2B4) -->
+        <div class="relative mb-12 pt-3">
+          <!-- Decorative Overlapping Back Folder Edges -->
+          <div class="hidden sm:block manila-back-sheet h-16 rounded-t-2xl mx-4 -mb-12 -rotate-1 opacity-90" aria-hidden="true"></div>
+          <div class="hidden sm:block bg-[#D6C19C] border-3 border-zineInk h-16 rounded-t-2xl mx-2 -mb-11 rotate-1 opacity-95" aria-hidden="true"></div>
+
+          <!-- Folder Tabs Bar -->
+          <div class="relative z-20 flex flex-wrap items-end gap-1.5 sm:gap-2 px-1 sm:px-3" role="tablist" aria-label="Product Strategy Manila Folders">
+            <button
+              type="button"
+              role="tab"
+              id="tab-folder-0"
+              aria-selected="true"
+              onclick="selectManilaFolder(0)"
+              class="manila-tab px-3.5 sm:px-5 py-2.5 rounded-t-xl border-3 border-b-0 border-zineInk bg-manilaLight text-zineInk font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider shadow-[3px_-2px_0px_rgba(0,0,0,0.2)]"
+            >
+              01 // DISCOVERY
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-folder-1"
+              aria-selected="false"
+              onclick="selectManilaFolder(1)"
+              class="manila-tab px-3.5 sm:px-5 py-2 rounded-t-xl border-3 border-b-0 border-zineInk bg-manilaMid text-zineInk/80 font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider hover:bg-manilaLight"
+            >
+              02 // HYPOTHESIS
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="tab-folder-2"
+              aria-selected="false"
+              onclick="selectManilaFolder(2)"
+              class="manila-tab px-3.5 sm:px-5 py-2 rounded-t-xl border-3 border-b-0 border-zineInk bg-manilaMid text-zineInk/80 font-mono text-[11px] sm:text-xs font-bold uppercase tracking-wider hover:bg-manilaLight"
+            >
+              03 // TRADEOFFS
+            </button>
+          </div>
+
+          <!-- Active Manila File Folder Drawer Panel -->
+          <div id="manilaFolderPanel" role="tabpanel" class="manila-folder-body relative z-20 rounded-2xl rounded-tl-none p-5 sm:p-8 text-zineInk">
+            <!-- Populated dynamically via selectManilaFolder(0) -->
+          </div>
+        </div>
+
+        <!-- Bottom Row: Interactive Red Vintage Typewriter + Terracotta-Annotated Editor's Field Notes -->
+        <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+          <!-- Left 7 Cols: Executive Navy Writing Blotter + Red Vintage Typewriter -->
+          <div class="lg:col-span-7 relative bg-[#111B31] border-3 border-manilaLight/30 rounded-2xl p-5 sm:p-7 shadow-[10px_10px_0px_#0B1221]">
+            <div class="flex items-center justify-between font-mono text-[10px] text-manilaLight/75 uppercase tracking-widest mb-4">
+              <span>STRATEGIST DESK BLOTTER · PRD DRAFTING STATION</span>
+              <span class="text-[#F59E6C]">INTERACTIVE TYPEWRITER</span>
+            </div>
+
+            <!-- Cream Paper Sheet Emerging from Typewriter -->
+            <div class="relative z-10 max-w-md mx-auto bg-paperWhite border-2 border-zineInk rounded-t-md p-5 sm:p-6 shadow-lg -mb-3">
+              <div class="flex items-center justify-between border-b border-zineInk/20 pb-2 mb-3 font-mono text-[10px] text-zineInk/70">
+                <span id="typewriterDocTag">PRD_MANIFESTO_01.TXT</span>
+                <span class="text-terracotta font-bold">CARRIAGE: READY</span>
+              </div>
+              <p class="font-mono text-sm sm:text-base font-semibold text-zineInk min-h-[84px] leading-relaxed">
+                <span id="typewriterOutput"></span><span class="cursor-blink"></span>
+              </p>
+              <div class="mt-3 pt-2 border-t border-dashed border-zineInk/20 flex flex-wrap gap-1.5">
+                <button type="button" onclick="typePrinciple(0)" class="px-2.5 py-1 rounded bg-terracotta text-white border border-zineInk font-mono text-[10px] font-bold uppercase cursor-pointer">
+                  01 · Better Questions
+                </button>
+                <button type="button" onclick="typePrinciple(1)" class="px-2.5 py-1 rounded bg-manilaLight border border-zineInk font-mono text-[10px] font-bold uppercase hover:bg-terracotta hover:text-white transition-colors cursor-pointer">
+                  02 · Evidence First
+                </button>
+                <button type="button" onclick="typePrinciple(2)" class="px-2.5 py-1 rounded bg-manilaLight border border-zineInk font-mono text-[10px] font-bold uppercase hover:bg-terracotta hover:text-white transition-colors cursor-pointer">
+                  03 · AI Guardrails
+                </button>
+              </div>
+            </div>
+
+            <!-- Retro Red Vintage Typewriter -->
+            <div class="relative z-20 max-w-lg mx-auto bg-typewriterRed border-4 border-zineInk rounded-2xl p-4 sm:p-5 shadow-[8px_8px_0px_#09090B]">
+              <div class="h-4 bg-zineInk rounded-full mb-3 flex items-center justify-between px-2">
+                <span class="w-3 h-5 bg-zinc-300 border border-zineInk rounded-xs -ml-4"></span>
+                <span class="font-mono text-[9px] text-white/75 tracking-widest">OLIVETTI · STRATEGIST EDITION</span>
+                <span class="w-3 h-5 bg-zinc-300 border border-zineInk rounded-xs -mr-4"></span>
+              </div>
+
+              <div class="bg-[#272422] rounded-lg p-2.5 mb-3 border-2 border-zineInk text-center">
+                <div class="font-mono text-[10px] text-manilaLight tracking-widest">
+                  \ | / — DISCOVER · ANALYZE · PRIORITIZE · SHIP — \ | /
+                </div>
+              </div>
+
+              <div class="grid grid-cols-8 gap-1.5 text-center font-mono text-[11px] font-bold">
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">Q</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">W</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">E</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">R</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">T</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">Y</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">U</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">I</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">A</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">S</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">D</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">F</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">G</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">H</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">J</button>
+                <button type="button" onclick="cyclePrinciple()" class="bg-paperWhite border-2 border-zineInk rounded-full py-1 shadow-2xs hover:bg-manilaLight cursor-pointer">K</button>
+              </div>
+              <div class="mt-2.5 flex justify-center">
+                <button type="button" onclick="cyclePrinciple()" class="w-4/5 py-1.5 rounded-full bg-manilaLight border-2 border-zineInk font-mono text-[10px] font-bold uppercase tracking-wider hover:bg-terracotta hover:text-white active:translate-y-0.5 transition-all cursor-pointer">
+                  [ TYPE NEXT PRINCIPLE · SPACEBAR ]
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 5 Cols: Terracotta-Annotated Editor's Field Notes Sheet -->
+          <div class="lg:col-span-5 relative">
+            <div class="bg-manilaLight border-3 border-zineInk p-6 sm:p-7 pt-8 rotate-1 shadow-[8px_8px_0px_#C85A32] relative rounded-lg">
+              <!-- Terracotta Masking Tape Strip -->
+              <div class="w-24 h-5 bg-terracotta/90 border border-zineInk/40 -rotate-2 absolute -top-3 left-1/2 -translate-x-1/2 shadow-xs" aria-hidden="true"></div>
+
+              <div class="flex items-center justify-between mb-3">
+                <span class="font-mono text-[10px] font-bold uppercase tracking-wider bg-terracotta text-white px-2.5 py-0.5 border border-zineInk">
+                  EDITOR&rsquo;S FIELD NOTES
+                </span>
+                <!-- Terracotta & Red Editing Pencil SVG -->
+                <svg width="96" height="16" viewBox="0 0 96 16" fill="none" aria-hidden="true">
+                  <polygon points="0,8 14,3 14,13" fill="#FDE68A" stroke="#1A1817" stroke-width="1.2"/>
+                  <polygon points="0,8 5,6 5,10" fill="#C85A32"/>
+                  <rect x="14" y="3" width="72" height="10" fill="#C85A32" stroke="#1A1817" stroke-width="1.2"/>
+                  <rect x="86" y="3" width="8" height="10" rx="1.5" fill="#EFE5CE" stroke="#1A1817" stroke-width="1.2"/>
+                </svg>
+              </div>
+
+              <h3 class="font-hand text-3xl font-bold text-zineInk mb-3">
+                How I approach product problems:
+              </h3>
+
+              <ul class="space-y-2.5 text-sm text-zineInk/95 leading-relaxed">
+                <li class="flex items-start gap-2">
+                  <span class="font-mono font-bold text-terracotta">01.</span>
+                  <span><strong>Start with the friction:</strong> Separate what users ask for from the root workflow bottleneck.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="font-mono font-bold text-terracotta">02.</span>
+                  <span><strong>Examine real evidence:</strong> Use SQL, cohorts, and funnels to observe behavior before assuming.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="font-mono font-bold text-terracotta">03.</span>
+                  <span><strong>Design with guardrails:</strong> Make AI &amp; data tools cited, transparent, and read-only where trust matters.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="font-mono font-bold text-terracotta">04.</span>
+                  <span><strong>Separate V1 from V2:</strong> Clearly distinguish implemented features from future roadmap ideas.</span>
+                </li>
+              </ul>
+
+              <p class="mt-4 pt-3 border-t border-zineInk/20 font-hand text-xl text-terracottaDark font-bold">
+                ✎ Personal perspective across my Data Science &amp; AI builds.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         4. SECTION 03 (#backlog-box): CARDBOARD BOX CASE STUDIES
+         ===================================================================== -->
+    <section id="backlog-box" class="locker-surface py-16 sm:py-24 px-4 sm:px-8 border-b-4 border-zineInk relative">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-12 relative">
+          <div class="inline-flex items-center gap-2 bg-zineMustard border-2 border-zineInk px-3.5 py-1 rounded-full font-mono text-xs font-bold uppercase tracking-wider shadow-[3px_3px_0px_#1A1817] mb-3">
+            <span>★</span>
+            <span>SELECTED CASE STUDIES · 3 PRODUCT BUILDS</span>
+          </div>
+          <h2 class="font-display text-5xl sm:text-7xl md:text-8xl tracking-tight text-zineMustard uppercase drop-shadow-[4px_4px_0px_#1A1817]">
+            THINK OUTSIDE THE BACKLOG
+          </h2>
+          <p class="text-sm sm:text-base text-white/95 max-w-2xl mx-auto mt-3 font-medium">
+            Open any corrugated project box below to inspect the 6-part story: <strong>Problem → Why It Matters → Approach → What I Built → What I Learned → What&rsquo;s Next</strong>, plus interactive sandboxes.
+          </p>
+        </div>
+
+        <!-- 3 Corrugated Cardboard Project Boxes -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+
+          <!-- PROJECT 01: Social Media Product Analytics -->
+          <article class="cardboard-surface rounded-xl p-6 flex flex-col justify-between relative group">
+            <div class="w-24 h-5 bg-[#E7D3B0]/85 border-x border-dashed border-zineInk/30 mx-auto -mt-8 mb-4 shadow-2xs"></div>
+
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-0.5 bg-zineInk text-zineMustard font-mono text-[10px] font-bold uppercase">
+                  BOX 01 · ANALYTICS
+                </span>
+                <span class="font-mono text-[11px] font-bold text-zineInk/80">DAU/MAU · COHORTS</span>
+              </div>
+
+              <h3 class="font-display text-3xl sm:text-4xl text-zineInk uppercase leading-none mb-3">
+                SOCIAL MEDIA PRODUCT ANALYTICS
+              </h3>
+
+              <p class="text-sm text-zineInk/90 leading-relaxed mb-4">
+                Understand user behavior before making assumptions by examining engagement, DAU/MAU stickiness, retention cohorts, and conversion funnels to uncover engagement gaps.
+              </p>
+
+              <div class="bg-paperWhite/95 border-2 border-zineInk rounded-lg p-3.5 mb-5 font-mono text-[11px] space-y-2">
+                <div class="flex justify-between text-zineInk/70">
+                  <span>BEHAVIORAL LENSES</span>
+                  <span class="font-bold text-typewriterRed">CONCEPTUAL</span>
+                </div>
+                <div class="space-y-1.5">
+                  <div class="bg-[#DBEAFE] px-2 py-1 rounded border border-zineInk/20 font-semibold">01. DAU / MAU Stickiness</div>
+                  <div class="bg-[#FEF08A] px-2 py-1 rounded border border-zineInk/20 font-semibold">02. Cohort Retention Curves</div>
+                  <div class="bg-[#BBF7D0] px-2 py-1 rounded border border-zineInk/20 font-semibold">03. Conversion Funnel Steps</div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onclick="openCaseModal(0)"
+              class="w-full py-3 px-4 rounded-lg bg-zineMustard text-zineInk font-mono text-xs font-bold uppercase tracking-wider border-2 border-zineInk shadow-[4px_4px_0px_#1A1817] group-hover:bg-white transition-colors cursor-pointer"
+            >
+              OPEN DOSSIER &amp; LENS SANDBOX →
+            </button>
+          </article>
+
+          <!-- PROJECT 02: Advanced RAG Documentation Assistant -->
+          <article class="cardboard-surface rounded-xl p-6 flex flex-col justify-between relative group">
+            <div class="w-24 h-5 bg-[#E7D3B0]/85 border-x border-dashed border-zineInk/30 mx-auto -mt-8 mb-4 shadow-2xs"></div>
+
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-0.5 bg-typewriterRed text-white font-mono text-[10px] font-bold uppercase">
+                  BOX 02 · HYBRID RAG
+                </span>
+                <span class="font-mono text-[11px] font-bold text-zineInk/80">LANGGRAPH · RRF</span>
+              </div>
+
+              <h3 class="font-display text-3xl sm:text-4xl text-zineInk uppercase leading-none mb-3">
+                ADVANCED RAG DOC ASSISTANT
+              </h3>
+
+              <p class="text-sm text-zineInk/90 leading-relaxed mb-4">
+                Turn scattered documentation into context-grounded answers with source citations using BM25, ChromaDB, Sentence Transformers, Reciprocal Rank Fusion, LangGraph, and GPT-4o-mini.
+              </p>
+
+              <div class="bg-paperWhite/95 border-2 border-zineInk rounded-lg p-3.5 mb-5 font-mono text-[11px] space-y-2">
+                <div class="flex justify-between text-zineInk/70">
+                  <span>RETRIEVAL PIPELINE</span>
+                  <span class="font-bold text-emerald-800">SOURCE CITED</span>
+                </div>
+                <div class="grid grid-cols-2 gap-1.5 text-center">
+                  <div class="bg-[#DBEAFE] p-1.5 rounded border border-zineInk/20 font-bold">BM25 Keyword</div>
+                  <div class="bg-[#BBF7D0] p-1.5 rounded border border-zineInk/20 font-bold">ChromaDB Vector</div>
+                </div>
+                <div class="bg-zineInk text-zineMustard text-center py-1 rounded font-bold">
+                  RRF Fusion → GPT-4o-mini + Citations
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onclick="openCaseModal(1)"
+              class="w-full py-3 px-4 rounded-lg bg-typewriterRed text-white font-mono text-xs font-bold uppercase tracking-wider border-2 border-zineInk shadow-[4px_4px_0px_#1A1817] group-hover:bg-zineInk transition-colors cursor-pointer"
+            >
+              OPEN DOSSIER &amp; RRF SLIDER →
+            </button>
+          </article>
+
+          <!-- PROJECT 03: Healthcare MCP Server – AI Powered -->
+          <article class="cardboard-surface rounded-xl p-6 flex flex-col justify-between relative group">
+            <div class="w-24 h-5 bg-[#E7D3B0]/85 border-x border-dashed border-zineInk/30 mx-auto -mt-8 mb-4 shadow-2xs"></div>
+
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-0.5 bg-emerald-900 text-emerald-200 font-mono text-[10px] font-bold uppercase">
+                  BOX 03 · RESPONSIBLE AI
+                </span>
+                <span class="font-mono text-[11px] font-bold text-zineInk/80">FASTMCP · SQLITE</span>
+              </div>
+
+              <h3 class="font-display text-3xl sm:text-4xl text-zineInk uppercase leading-none mb-3">
+                HEALTHCARE MCP SERVER
+              </h3>
+
+              <p class="text-sm text-zineInk/90 leading-relaxed mb-4">
+                Expose SQLite healthcare data safely via 4 FastMCP tools over Streamable HTTP with validated inputs and controlled, read-only SQL execution. <em>(Non-clinical prototype.)</em>
+              </p>
+
+              <div class="bg-paperWhite/95 border-2 border-zineInk rounded-lg p-3.5 mb-5 font-mono text-[11px] space-y-2">
+                <div class="flex justify-between text-zineInk/70">
+                  <span>4 SCOPED TOOLS</span>
+                  <span class="font-bold text-emerald-800">READ-ONLY SQL</span>
+                </div>
+                <div class="grid grid-cols-2 gap-1.5 text-[10px]">
+                  <div class="bg-[#BBF7D0] px-2 py-1 rounded border border-zineInk/20 font-semibold">1. Risk Scoring</div>
+                  <div class="bg-[#DBEAFE] px-2 py-1 rounded border border-zineInk/20 font-semibold">2. Readmission</div>
+                  <div class="bg-[#FEF08A] px-2 py-1 rounded border border-zineInk/20 font-semibold">3. Schema Inspect</div>
+                  <div class="bg-[#FBCFE8] px-2 py-1 rounded border border-zineInk/20 font-semibold">4. Safe Query</div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onclick="openCaseModal(2)"
+              class="w-full py-3 px-4 rounded-lg bg-emerald-800 text-white font-mono text-xs font-bold uppercase tracking-wider border-2 border-zineInk shadow-[4px_4px_0px_#1A1817] group-hover:bg-zineInk transition-colors cursor-pointer"
+            >
+              OPEN DOSSIER &amp; SQL GUARDRAIL →
+            </button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         5. SECTION 04 (#crossword-about): INTERACTIVE PM & DATA SCIENCE CROSSWORD
+         ===================================================================== -->
+    <section id="crossword-about" class="crossword-bg py-16 sm:py-24 px-4 sm:px-8 border-b-4 border-zineInk">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-12">
+          <span class="inline-block bg-typewriterRed text-white font-mono text-xs font-bold uppercase tracking-widest px-3 py-1 border-2 border-zineInk -rotate-1 mb-2">
+            ABOUT TARUN KUMAR E · CLUES &amp; CREDENTIALS
+          </span>
+          <h2 class="font-display text-5xl sm:text-7xl text-zineInk uppercase tracking-tight">
+            CONNECTING THE CLUES
+          </h2>
+          <p class="text-sm sm:text-base text-zineInk/80 max-w-xl mx-auto mt-2">
+            Click any numbered clue on the PM &amp; Data Science crossword board to inspect my academic foundation, internship, leadership, and certifications.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+          <!-- Left 6 Cols: Interactive Crossword Grid Card -->
+          <div class="lg:col-span-6 bg-paperWhite border-3 border-zineInk rounded-xl p-5 sm:p-6 shadow-[8px_8px_0px_#1A1817]">
+            <div class="flex items-center justify-between border-b-2 border-zineInk pb-3 mb-4">
+              <span class="font-mono text-xs font-bold uppercase">SUNDAY PM EDITION · PUZZLE #01</span>
+              <span class="font-hand text-xl font-bold text-typewriterRed">click a clue!</span>
+            </div>
+
+            <!-- Crossword Visual Matrix -->
+            <div class="grid grid-cols-7 gap-1 bg-zineInk p-1.5 rounded-md font-mono text-xs sm:text-sm font-bold text-center select-none mb-5" role="group" aria-label="Interactive Product Management Crossword">
+              <!-- Row 1: DATA + R -->
+              <button type="button" onclick="selectClue(0)" class="bg-zineMustard text-zineInk py-2.5 relative cursor-pointer hover:bg-amber-300"><span class="absolute top-0.5 left-1 text-[8px]">1</span>D</button>
+              <button type="button" onclick="selectClue(0)" class="bg-zineMustard text-zineInk py-2.5 cursor-pointer hover:bg-amber-300">A</button>
+              <button type="button" onclick="selectClue(0)" class="bg-zineMustard text-zineInk py-2.5 cursor-pointer hover:bg-amber-300">T</button>
+              <button type="button" onclick="selectClue(0)" class="bg-zineMustard text-zineInk py-2.5 cursor-pointer hover:bg-amber-300">A</button>
+              <div class="bg-zineInk py-2.5"></div>
+              <button type="button" onclick="selectClue(1)" class="bg-white text-zineInk py-2.5 relative cursor-pointer hover:bg-sky-100"><span class="absolute top-0.5 left-1 text-[8px]">2</span>R</button>
+              <div class="bg-zineInk py-2.5"></div>
+
+              <!-- Row 2: A -->
+              <div class="bg-zineInk py-2.5"></div>
+              <div class="bg-zineInk py-2.5"></div>
+              <div class="bg-zineInk py-2.5"></div>
+              <div class="bg-zineInk py-2.5"></div>
+              <div class="bg-zineInk py-2.5"></div>
+              <button type="button" onclick="selectClue(1)" class="bg-white text-zineInk py-2.5 cursor-pointer hover:bg-sky-100">A</button>
+              <div class="bg-zineInk py-2.5"></div>
+
+              <!-- Row 3: METRICS -->
+              <button type="button" onclick="selectClue(2)" class="bg-white text-zineInk py-2.5 relative cursor-pointer hover:bg-emerald-100"><span class="absolute top-0.5 left-1 text-[8px]">3</span>M</button>
+              <button type="button" onclick="selectClue(2)" class="bg-white text-zineInk py-2.5 cursor-pointer hover:bg-emerald-100">E</button>
+              <button type="button" onclick="selectClue(2)" class="bg-white text-zineInk py-2.5 cursor-pointer hover:bg-emerald-100">T</button>
+              <button type="button" onclick="selectClue(2)" class="bg-white text-zineInk py-2.5 cursor-pointer hover:bg-emerald-100">R</button>
+              <button type="button" onclick="selectClue(2)" class="bg-white text-zineInk py-2.5 cursor-pointer hover:bg-emerald-100">I</button>
+              <button type="button" onclick="selectClue(1)" class="bg-sky-200 text-zineInk py-2.5 cursor-pointer">G</button>
+              <button type="button" onclick="selectClue(2)" class="bg-white text-zineInk py-2.5 cursor-pointer hover:bg-emerald-100">S</button>
+
+              <!-- Row 4: MCP -->
+              <div class="bg-zineInk py-2.5"></div>
+              <div class="bg-zineInk py-2.5"></div>
+              <button type="button" onclick="selectClue(3)" class="bg-white text-zineInk py-2.5 relative cursor-pointer hover:bg-pink-100"><span class="absolute top-0.5 left-1 text-[8px]">4</span>M</button>
+              <button type="button" onclick="selectClue(3)" class="bg-white text-zineInk py-2.5 cursor-pointer hover:bg-pink-100">C</button>
+              <button type="button" onclick="selectClue(3)" class="bg-white text-zineInk py-2.5 cursor-pointer hover:bg-pink-100">P</button>
+              <div class="bg-zineInk py-2.5"></div>
+              <div class="bg-zineInk py-2.5"></div>
+            </div>
+
+            <!-- Clue Buttons & Dynamic Explanation -->
+            <div class="flex flex-wrap gap-2 mb-3">
+              <button type="button" onclick="selectClue(0)" class="px-2.5 py-1 rounded bg-zineMustard border border-zineInk font-mono text-[11px] font-bold cursor-pointer">1 ACROSS: DATA</button>
+              <button type="button" onclick="selectClue(1)" class="px-2.5 py-1 rounded bg-sky-200 border border-zineInk font-mono text-[11px] font-bold cursor-pointer">2 DOWN: RAG</button>
+              <button type="button" onclick="selectClue(2)" class="px-2.5 py-1 rounded bg-emerald-200 border border-zineInk font-mono text-[11px] font-bold cursor-pointer">3 ACROSS: METRICS</button>
+              <button type="button" onclick="selectClue(3)" class="px-2.5 py-1 rounded bg-pink-200 border border-zineInk font-mono text-[11px] font-bold cursor-pointer">4 ACROSS: MCP</button>
+            </div>
+
+            <div id="clueDisplayBox" class="bg-crosswordCream border-2 border-zineInk rounded-lg p-4">
+              <p class="font-mono text-xs font-bold text-typewriterRed uppercase mb-1">
+                CLUE 1 ACROSS · DATA (9.35 GPA · BCA DATA SCIENCE)
+              </p>
+              <p class="text-sm text-zineInk leading-relaxed">
+                Bachelor of Computer Application (Data Science) at <strong>SRM Institute of Science and Technology (GPA: 9.35)</strong> with <strong>First Rank in Mathematics</strong>, following Higher Secondary Education at <strong>Prasan Vidhya Bala Mandir Hr. Sec. School (GPA: 8.95)</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right 6 Cols: Structured About Tarun & Verified Credentials Dossier -->
+          <div class="lg:col-span-6 space-y-5">
+            <!-- Bio Card -->
+            <div class="bg-paperWhite border-3 border-zineInk rounded-xl p-6 shadow-[8px_8px_0px_#1A1817]">
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-0.5 bg-zineMustard border border-zineInk font-mono text-[11px] font-bold uppercase">
+                  EDUCATION &amp; PRODUCT FOCUS
+                </span>
+                <span class="font-mono text-xs font-bold text-zineInk/70">CHENNAI, TAMIL NADU</span>
+              </div>
+              <p class="text-sm text-zineInk/90 leading-relaxed mb-3">
+                <strong>SRM Institute of Science and Technology</strong> (June 2023 – May 2026) · Bachelor of Computer Application (Data Science), <strong>GPA: 9.35</strong>.<br />
+                <strong>Prasan Vidhya Bala Mandir Hr. Sec. School</strong> (2022 – 2023) · Higher Secondary Education (12th), <strong>GPA: 8.95</strong>.
+              </p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2.5 py-1 rounded bg-crosswordCream border border-zineInk/30 font-mono text-[11px] font-semibold">Product Management</span>
+                <span class="px-2.5 py-1 rounded bg-crosswordCream border border-zineInk/30 font-mono text-[11px] font-semibold">Product Analytics</span>
+                <span class="px-2.5 py-1 rounded bg-crosswordCream border border-zineInk/30 font-mono text-[11px] font-semibold">AI-Powered Products</span>
+                <span class="px-2.5 py-1 rounded bg-crosswordCream border border-zineInk/30 font-mono text-[11px] font-semibold">SaaS &amp; UX</span>
+                <span class="px-2.5 py-1 rounded bg-crosswordCream border border-zineInk/30 font-mono text-[11px] font-semibold">Data-Informed Decisions</span>
+              </div>
+            </div>
+
+            <!-- Experience, Honors & Volunteer Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="bg-paperWhite border-2 border-zineInk rounded-xl p-4 shadow-[4px_4px_0px_#1A1817]">
+                <p class="font-mono text-[10px] font-bold uppercase text-typewriterRed mb-1">INTERNSHIP · OCT–DEC 2025</p>
+                <h3 class="font-sans text-sm font-bold text-zineInk">Data Engineer Intern · Rubixe Innovative Tech Solutions</h3>
+                <p class="text-xs text-zineInk/85 mt-1.5 leading-relaxed">
+                  Built reusable Python &amp; Scikit-learn pipelines for preprocessing, feature engineering, and automated model evaluation across Accuracy, Precision, Recall, F1-Score, ROC-AUC, and Confusion Matrix.
+                </p>
+              </div>
+
+              <div class="bg-paperWhite border-2 border-zineInk rounded-xl p-4 shadow-[4px_4px_0px_#1A1817]">
+                <p class="font-mono text-[10px] font-bold uppercase text-[#1D4ED8] mb-1">HONORS &amp; LEADERSHIP</p>
+                <h3 class="font-sans text-sm font-bold text-zineInk">1st Rank Math · Club Excellence Award</h3>
+                <p class="text-xs text-zineInk/85 mt-1.5 leading-relaxed">
+                  Academic Excellence Award (First Rank in Mathematics at college level), NGO Merit Scholarship, and <strong>Club Excellence Award</strong> with Tamil Mandram Club event planning &amp; logistics.
+                </p>
+              </div>
+            </div>
+
+            <!-- Certifications Strip -->
+            <div class="bg-zineInk text-paperWhite rounded-xl p-4 border-2 border-zineInk">
+              <p class="font-mono text-[10px] font-bold uppercase text-zineMustard mb-2">VERIFIED CERTIFICATIONS</p>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-xs">
+                <div>✓ AWS Generative AI Foundation</div>
+                <div>✓ Google Data Analytics Certificate</div>
+                <div>✓ Mastering Generative AI (GeeksforGeeks)</div>
+                <div>✓ Research Methodology in Data Science</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         5B. SECTION 04B (#field-kit): THE PM FIELD KIT & WORKBENCH DRAWER
+         ===================================================================== -->
+    <section id="field-kit" class="pegboard-tray py-16 sm:py-24 px-4 sm:px-8 border-b-4 border-zineInk relative">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="text-center mb-10">
+          <div class="inline-flex items-center gap-2 bg-zineMustard text-zineInk border-2 border-zineInk px-3.5 py-1 rounded-full font-mono text-xs font-bold uppercase tracking-wider shadow-[3px_3px_0px_#09090B] mb-3">
+            <span>🧰</span>
+            <span>PM TOOLKIT // WORKBENCH DRAWER</span>
+          </div>
+          <h2 class="font-display text-5xl sm:text-7xl text-paperWhite uppercase tracking-tight drop-shadow-[4px_4px_0px_#09090B]">
+            THE PM FIELD KIT
+          </h2>
+          <p class="text-sm sm:text-base text-zinc-300 max-w-2xl mx-auto mt-2">
+            Tools are only useful when tied to a decision. Filter by product phase or click any physical artifact below to see how I use <strong>SQL, JIRA, Notion, Figma, Excel,</strong> and <strong>Postman</strong> in practice.
+          </p>
+        </div>
+
+        <!-- Interactive Product Phase Filter Bar -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mb-10" role="tablist" aria-label="Filter PM Field Kit by Product Phase">
+          <button type="button" data-phase="all" onclick="filterFieldKit('all')" class="kit-filter-btn px-3.5 py-2 rounded-lg bg-zineMustard text-zineInk border-2 border-zineInk font-mono text-xs font-bold uppercase shadow-[3px_3px_0px_#09090B] cursor-pointer">
+            ALL TOOLS (06)
+          </button>
+          <button type="button" data-phase="discover" onclick="filterFieldKit('discover')" class="kit-filter-btn px-3.5 py-2 rounded-lg bg-paperWhite text-zineInk border-2 border-zineInk font-mono text-xs font-bold uppercase shadow-[3px_3px_0px_#09090B] hover:bg-zineMustard transition-colors cursor-pointer">
+            01 · DISCOVER &amp; ANALYZE
+          </button>
+          <button type="button" data-phase="spec" onclick="filterFieldKit('spec')" class="kit-filter-btn px-3.5 py-2 rounded-lg bg-paperWhite text-zineInk border-2 border-zineInk font-mono text-xs font-bold uppercase shadow-[3px_3px_0px_#09090B] hover:bg-zineMustard transition-colors cursor-pointer">
+            02 · SPEC &amp; DESIGN
+          </button>
+          <button type="button" data-phase="ship" onclick="filterFieldKit('ship')" class="kit-filter-btn px-3.5 py-2 rounded-lg bg-paperWhite text-zineInk border-2 border-zineInk font-mono text-xs font-bold uppercase shadow-[3px_3px_0px_#09090B] hover:bg-zineMustard transition-colors cursor-pointer">
+            03 · TEST &amp; SHIP
+          </button>
+        </div>
+
+        <!-- 6 Tactile Tool Artifact Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mb-10">
+
+          <!-- 01. SQL: The Evidence Magnifier -->
+          <article data-phases="discover ship" onclick="inspectFieldTool('sql')" class="tool-artifact-card bg-[#E0F2FE] border-3 border-zineInk rounded-xl p-5 shadow-[6px_6px_0px_#09090B] -rotate-1 relative cursor-pointer">
+            <div class="w-24 h-4 bg-zineMustard/90 border border-zineInk/30 mx-auto -mt-7 mb-3"></div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2 py-0.5 bg-zineInk text-sky-300 font-mono text-[10px] font-bold uppercase">EVIDENCE MAGNIFIER</span>
+              <span class="font-mono text-[11px] font-bold text-sky-950">QUERY · SCHEMA</span>
+            </div>
+            <h3 class="font-display text-3xl text-zineInk uppercase mb-2">SQL</h3>
+            <div class="bg-zineInk text-sky-200 font-mono text-[11px] p-2.5 rounded border border-zineInk mb-3">
+              <code>SELECT cohort_week, COUNT(DISTINCT user_id) FROM events GROUP BY 1;</code>
+            </div>
+            <p class="text-xs sm:text-sm text-zineInk/90 leading-relaxed">
+              Querying relational schemas, joining event logs, validating data hygiene, and diagnosing retention cohorts &amp; funnel drop-offs before assuming solutions.
+            </p>
+          </article>
+
+          <!-- 02. JIRA: The Sprint Kanban Ticket -->
+          <article data-phases="spec ship" onclick="inspectFieldTool('jira')" class="tool-artifact-card bg-paperWhite border-3 border-zineInk rounded-xl p-5 shadow-[6px_6px_0px_#09090B] rotate-1 relative cursor-pointer">
+            <div class="w-24 h-4 bg-sky-300/90 border border-zineInk/30 mx-auto -mt-7 mb-3"></div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2 py-0.5 bg-[#1D4ED8] text-white font-mono text-[10px] font-bold uppercase">TICKET #APM-104</span>
+              <span class="font-mono text-[11px] font-bold text-[#1D4ED8]">P1 · BACKLOG</span>
+            </div>
+            <h3 class="font-display text-3xl text-zineInk uppercase mb-2">JIRA</h3>
+            <div class="bg-blue-50 border border-dashed border-[#1D4ED8] rounded p-2.5 mb-3 font-mono text-[11px] text-zineInk">
+              <strong>Story:</strong> As a user, I want inline citations so I can verify AI answers.
+            </div>
+            <p class="text-xs sm:text-sm text-zineInk/90 leading-relaxed">
+              Breaking ambiguous problems into clear user stories, edge-case acceptance criteria, and prioritized V1 vs. V2 sprint backlogs.
+            </p>
+          </article>
+
+          <!-- 03. NOTION: The PRD & Discovery Notebook -->
+          <article data-phases="discover spec" onclick="inspectFieldTool('notion')" class="tool-artifact-card bg-manilaLight border-3 border-zineInk rounded-xl p-5 shadow-[6px_6px_0px_#09090B] -rotate-1 relative cursor-pointer">
+            <div class="w-24 h-4 bg-terracotta/90 border border-zineInk/30 mx-auto -mt-7 mb-3"></div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2 py-0.5 bg-zineInk text-paperWhite font-mono text-[10px] font-bold uppercase">PRD NOTEBOOK</span>
+              <span class="font-mono text-[11px] font-bold text-terracottaDark">SPECS · LOGS</span>
+            </div>
+            <h3 class="font-display text-3xl text-zineInk uppercase mb-2">NOTION</h3>
+            <div class="bg-white border border-zineInk/30 rounded p-2.5 mb-3 font-mono text-[11px] text-zineInk">
+              ☑ Problem Framing · ☑ Trade-off Matrix · ☑ V1 Guardrails
+            </div>
+            <p class="text-xs sm:text-sm text-zineInk/90 leading-relaxed">
+              Structuring crisp Product Requirements Documents (PRDs), decision logs, hypothesis trackers, and synthesized discovery notes.
+            </p>
+          </article>
+
+          <!-- 04. FIGMA: The Wireframe Blueprint -->
+          <article data-phases="spec" onclick="inspectFieldTool('figma')" class="tool-artifact-card bg-[#FCE7F3] border-3 border-zineInk rounded-xl p-5 shadow-[6px_6px_0px_#09090B] rotate-1 relative cursor-pointer">
+            <div class="w-24 h-4 bg-emerald-300/90 border border-zineInk/30 mx-auto -mt-7 mb-3"></div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2 py-0.5 bg-pink-700 text-white font-mono text-[10px] font-bold uppercase">WIREFRAME SPEC</span>
+              <span class="font-mono text-[11px] font-bold text-pink-900">FLOWS · UX</span>
+            </div>
+            <h3 class="font-display text-3xl text-zineInk uppercase mb-2">FIGMA</h3>
+            <div class="bg-white border border-zineInk/30 rounded p-2.5 mb-3 flex items-center justify-between font-mono text-[10px] text-zineInk">
+              <span class="px-2 py-0.5 bg-zinc-100 border border-zineInk/30 rounded">[Input]</span>
+              <span>→</span>
+              <span class="px-2 py-0.5 bg-zinc-100 border border-zineInk/30 rounded">[Citations]</span>
+              <span>→</span>
+              <span class="px-2 py-0.5 bg-zineMustard border border-zineInk/30 rounded font-bold">[Verify]</span>
+            </div>
+            <p class="text-xs sm:text-sm text-zineInk/90 leading-relaxed">
+              Sketching rapid user flows, low-fidelity wireframes, and interactive interface states to validate usability and align engineering early.
+            </p>
+          </article>
+
+          <!-- 05. EXCEL: The Cohort & Funnel Ledger -->
+          <article data-phases="discover" onclick="inspectFieldTool('excel')" class="tool-artifact-card bg-[#DCFCE7] border-3 border-zineInk rounded-xl p-5 shadow-[6px_6px_0px_#09090B] -rotate-1 relative cursor-pointer">
+            <div class="w-24 h-4 bg-zineMustard/90 border border-zineInk/30 mx-auto -mt-7 mb-3"></div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2 py-0.5 bg-emerald-900 text-emerald-100 font-mono text-[10px] font-bold uppercase">COHORT LEDGER</span>
+              <span class="font-mono text-[11px] font-bold text-emerald-950">PIVOTS · SCORING</span>
+            </div>
+            <h3 class="font-display text-3xl text-zineInk uppercase mb-2">EXCEL</h3>
+            <div class="bg-white border border-zineInk/30 rounded p-2.5 mb-3 font-mono text-[11px] text-emerald-950">
+              <code>fx: =VALUE_SCORE / EFFORT_ESTIMATE</code>
+            </div>
+            <p class="text-xs sm:text-sm text-zineInk/90 leading-relaxed">
+              Building quick cohort tables, funnel drop-off checks, pivot summaries, and Value vs. Feasibility prioritization scoring sheets.
+            </p>
+          </article>
+
+          <!-- 06. POSTMAN: The API & MCP Test Bench -->
+          <article data-phases="ship" onclick="inspectFieldTool('postman')" class="tool-artifact-card bg-[#FFEDD5] border-3 border-zineInk rounded-xl p-5 shadow-[6px_6px_0px_#09090B] rotate-1 relative cursor-pointer">
+            <div class="w-24 h-4 bg-sky-300/90 border border-zineInk/30 mx-auto -mt-7 mb-3"></div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="px-2 py-0.5 bg-terracotta text-white font-mono text-[10px] font-bold uppercase">API TEST BENCH</span>
+              <span class="font-mono text-[11px] font-bold text-emerald-800">● 200 OK</span>
+            </div>
+            <h3 class="font-display text-3xl text-zineInk uppercase mb-2">POSTMAN</h3>
+            <div class="bg-zineInk text-amber-300 font-mono text-[11px] p-2.5 rounded border border-zineInk mb-3">
+              <code>POST /mcp/tools/risk_score → READ_ONLY</code>
+            </div>
+            <p class="text-xs sm:text-sm text-zineInk/90 leading-relaxed">
+              Inspecting REST API payloads, verifying Streamable HTTP endpoints, and testing input validation &amp; read-only boundaries on AI tool schemas.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Bottom Live Workflow Inspection Drawer -->
+        <div id="fieldKitInspector" class="bg-paperWhite border-3 border-zineInk rounded-xl p-5 sm:p-6 shadow-[8px_8px_0px_#F4C414]">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b-2 border-dashed border-zineInk/25 pb-2.5 mb-3">
+            <span id="kitInspectorTag" class="font-mono text-xs font-bold uppercase text-typewriterRed">
+              WORKBENCH INSPECTOR · CLICK ANY TOOL CARD ABOVE
+            </span>
+            <span class="font-mono text-[11px] font-bold text-zineInk/70">PM WORKFLOW APPLICATION</span>
+          </div>
+          <p id="kitInspectorBody" class="text-sm sm:text-base text-zineInk leading-relaxed">
+            <strong>End-to-End PM Stack:</strong> I use <strong>SQL &amp; Excel</strong> to uncover behavioral evidence, <strong>Notion &amp; Figma</strong> to frame PRDs and user flows, <strong>JIRA</strong> to sequence V1 vs. V2 stories, and <strong>Postman</strong> to validate API and MCP guardrails before release.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         6. SECTION 05 (#kraft-contact): KRAFT ENVELOPE CONTACT CARD
+         ===================================================================== -->
+    <section id="kraft-contact" class="bg-zineMustard py-16 sm:py-24 px-4 sm:px-8 relative overflow-hidden">
+      <div class="max-w-3xl mx-auto relative">
+
+        <!-- Red Exclamation Sticker Cutout -->
+        <div class="hidden sm:flex items-center justify-center w-14 h-20 bg-typewriterRed text-white font-display text-5xl border-4 border-white shadow-xl rotate-12 absolute -top-6 -right-4 z-20 select-none" aria-hidden="true">
+          !
+        </div>
+
+        <!-- Kraft Paper Envelope Card -->
+        <div class="kraft-envelope rounded-2xl p-6 sm:p-10 text-zineInk relative">
+          <div class="flex items-center justify-between border-b-2 border-dashed border-zineInk/40 pb-4 mb-6 font-mono text-xs">
+            <span class="bg-paperWhite px-2.5 py-1 border border-zineInk font-bold">POSTAGE PAID · CHENNAI, INDIA</span>
+            <span class="font-bold">NR. 2026 · APM / PRODUCT ANALYST</span>
+          </div>
+
+          <h2 class="font-display text-4xl sm:text-6xl uppercase leading-none text-zineInk mb-3">
+            Have an interesting problem? Let&rsquo;s talk.
+          </h2>
+          <p class="text-sm sm:text-base font-medium text-zineInk/90 mb-6 max-w-xl">
+            Open to Associate Product Manager, Product Analyst, and Product Associate opportunities. Copy my email, explore my code, or print/save my resume below.
+          </p>
+
+          <!-- Direct Action Links Row -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+            <button
+              type="button"
+              onclick="copyEmail()"
+              class="flex items-center justify-between px-4 py-3 rounded-lg bg-paperWhite border-2 border-zineInk font-mono text-xs font-bold shadow-[4px_4px_0px_#1A1817] hover:bg-zineMustard transition-colors cursor-pointer"
+            >
+              <span>✉ tarunkk.ds@gmail.com</span>
+              <span class="bg-zineInk text-white px-2 py-0.5 rounded text-[10px]">COPY</span>
+            </button>
+
+            <button
+              type="button"
+              onclick="openResumeModal()"
+              class="flex items-center justify-between px-4 py-3 rounded-lg bg-zineMustard border-2 border-zineInk font-mono text-xs font-bold shadow-[4px_4px_0px_#1A1817] hover:bg-white transition-colors cursor-pointer"
+            >
+              <span>📄 OPEN / PRINT RESUME</span>
+              <span>PDF ↗</span>
+            </button>
+
+            <a
+              href="https://github.com/tarunkumar-ds"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-between px-4 py-3 rounded-lg bg-paperWhite border-2 border-zineInk font-mono text-xs font-bold shadow-[4px_4px_0px_#1A1817] hover:bg-sky-200 transition-colors"
+            >
+              <span>⌘ github.com/tarunkumar-ds</span>
+              <span>OPEN ↗</span>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/tarun-ds/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex items-center justify-between px-4 py-3 rounded-lg bg-paperWhite border-2 border-zineInk font-mono text-xs font-bold shadow-[4px_4px_0px_#1A1817] hover:bg-emerald-200 transition-colors"
+            >
+              <span>in linkedin.com/in/tarun-ds</span>
+              <span>OPEN ↗</span>
+            </a>
+          </div>
+
+          <div class="pt-4 border-t-2 border-dashed border-zineInk/40 flex flex-col sm:flex-row items-center justify-between gap-2 font-mono text-xs text-zineInk/85">
+            <span>© 2026 TARUN KUMAR E · PRODUCT PORTFOLIO</span>
+            <span class="font-hand text-xl font-bold">Good products begin with better questions.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       INTERACTIVE 6-PART CASE STUDY DOSSIER MODAL (Hidden by Default)
+       ===================================================================== -->
+  <div
+    id="caseModal"
+    class="strict-modal fixed inset-0 z-50 bg-black/70 backdrop-blur-xs items-end sm:items-center justify-center p-0 sm:p-6"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="caseModalHeading"
+    onclick="if(event.target === this) closeCaseModal()"
+  >
+    <div class="bg-paperWhite w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-t-2xl sm:rounded-2xl border-4 border-zineInk shadow-2xl">
+      <div class="sticky top-0 z-20 bg-zineMustard border-b-3 border-zineInk px-4 sm:px-6 py-3.5 flex items-center justify-between gap-3">
+        <span id="caseModalTag" class="font-mono text-xs font-bold uppercase tracking-wider text-zineInk">
+          CASE STUDY 01 / 03
+        </span>
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="switchCase(-1)" class="px-2.5 py-1 rounded bg-white border-2 border-zineInk font-mono text-xs font-bold cursor-pointer">← PREV</button>
+          <button type="button" onclick="switchCase(1)" class="px-2.5 py-1 rounded bg-white border-2 border-zineInk font-mono text-xs font-bold cursor-pointer">NEXT →</button>
+          <button type="button" onclick="closeCaseModal()" class="px-3 py-1 rounded bg-typewriterRed text-white border-2 border-zineInk font-mono text-xs font-bold cursor-pointer">✕ CLOSE</button>
+        </div>
+      </div>
+
+      <div id="caseModalBody" class="p-6 sm:p-9 space-y-6"></div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       STRICTLY HIDDEN-BY-DEFAULT PRINTABLE RESUME MODAL (Tarun_AICB.pdf)
+       ===================================================================== -->
+  <div
+    id="resumeModal"
+    class="strict-modal fixed inset-0 z-50 bg-black/70 backdrop-blur-xs items-center justify-center p-3 sm:p-6"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="resumeModalTitle"
+    onclick="if(event.target === this) closeResumeModal()"
+  >
+    <div class="bg-white w-full max-w-3xl max-h-[92vh] overflow-y-auto rounded-2xl border-4 border-zineInk shadow-2xl">
+      <div class="no-print sticky top-0 z-20 bg-zineMustard border-b-2 border-zineInk px-5 py-3 flex items-center justify-between gap-3">
+        <span id="resumeModalTitle" class="font-mono text-xs font-bold uppercase text-zineInk">
+          TARUN KUMAR E — RESUME (PRINT / SAVE PDF)
+        </span>
+        <div class="flex items-center gap-2">
+          <button type="button" onclick="window.print()" class="px-3.5 py-1.5 rounded bg-zineInk text-zineMustard font-mono text-xs font-bold uppercase cursor-pointer">
+            🖨 PRINT / SAVE PDF
+          </button>
+          <button type="button" onclick="closeResumeModal()" class="px-3 py-1.5 rounded bg-typewriterRed text-white border border-zineInk font-mono text-xs font-bold uppercase cursor-pointer">
+            ✕ CLOSE
+          </button>
+        </div>
+      </div>
+
+      <div id="resumePrintArea" class="p-6 sm:p-10 text-zineInk space-y-5 font-sans">
+        <div class="border-b-2 border-zineInk pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-3">
+          <div>
+            <h2 class="text-3xl font-bold tracking-tight">Tarun Kumar E</h2>
+            <p class="text-sm text-zinc-600 mt-0.5">BCA (Data Science) Graduate · Associate Product Manager &amp; Product Analyst</p>
+          </div>
+          <div class="text-xs font-mono space-y-0.5 sm:text-right">
+            <p>Email: tarunkk.ds@gmail.com</p>
+            <p>Mobile: +91 9840373794</p>
+            <p>GitHub: github.com/tarunkumar-ds · LinkedIn: linkedin.com/in/tarun-ds</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-mono text-xs font-bold uppercase bg-zinc-100 px-2.5 py-1 border-l-4 border-zineInk mb-2">Professional Summary</h3>
+          <p class="text-sm leading-relaxed text-zinc-800">
+            BCA (Data Science) graduate with hands-on experience in Python, Large Language Models (LLMs), AI agents, and Generative AI workflows. Proven foundation in API integration, Retrieval-Augmented Generation (RAG) concepts, prompt engineering, and intelligent automation using tools like n8n. Equipped with strong analytical, logical reasoning, and problem-solving skills to build practical AI solutions.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-mono text-xs font-bold uppercase bg-zinc-100 px-2.5 py-1 border-l-4 border-zineInk mb-2">Education</h3>
+          <div class="space-y-2 text-sm">
+            <div class="flex flex-wrap justify-between font-semibold">
+              <span>SRM Institute of Science and Technology — Chennai, Tamil Nadu</span>
+              <span class="font-mono text-xs">June 2023 – May 2026</span>
+            </div>
+            <p>Bachelor of Computer Application (Data Science), <strong>GPA: 9.35</strong></p>
+            <p class="text-xs text-zinc-600">Relevant Coursework: Data Science, Data Wrangling, DBMS, Natural Language Processing, Machine Learning, Deep Learning</p>
+            <div class="flex flex-wrap justify-between font-semibold pt-1">
+              <span>Prasan Vidhya Bala Mandir Hr. Sec. School — Chengalpattu, Tamil Nadu</span>
+              <span class="font-mono text-xs">2022 – 2023</span>
+            </div>
+            <p>Higher Secondary Education (12th), <strong>GPA: 8.95</strong></p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-mono text-xs font-bold uppercase bg-zinc-100 px-2.5 py-1 border-l-4 border-zineInk mb-2">Internship</h3>
+          <div class="text-sm">
+            <div class="flex flex-wrap justify-between font-semibold">
+              <span>Data Engineer Intern — Rubixe Innovative Tech Solutions (Bengaluru)</span>
+              <span class="font-mono text-xs">Oct – Dec 2025</span>
+            </div>
+            <ul class="list-disc pl-5 mt-1.5 space-y-1 text-zinc-800">
+              <li>Built reusable Python-based data pipelines to automate data preprocessing, transformation, feature engineering, and downstream ML workflows.</li>
+              <li>Performed data cleaning, preprocessing, feature selection, and transformation to prepare structured datasets for analytical and predictive workflows.</li>
+              <li>Developed modular Scikit-learn pipelines integrating preprocessing, feature engineering, model training, and prediction steps into repeatable workflows.</li>
+              <li>Automated model evaluation workflows and compared multiple algorithms using Accuracy, Precision, Recall, F1-Score, ROC-AUC, and Confusion Matrix to identify optimal models.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-mono text-xs font-bold uppercase bg-zinc-100 px-2.5 py-1 border-l-4 border-zineInk mb-2">Projects</h3>
+          <div class="space-y-3 text-sm">
+            <div>
+              <p class="font-semibold">Advanced RAG Documentation Assistant <span class="font-mono text-xs font-normal text-zinc-600">(Python, LangGraph, ChromaDB, Sentence Transformers, BM25)</span></p>
+              <ul class="list-disc pl-5 mt-1 space-y-0.5 text-zinc-800">
+                <li>Developed a Retrieval-Augmented Generation (RAG) assistant to answer documentation queries with context-grounded responses and source citations.</li>
+                <li>Implemented hybrid search using BM25 keyword retrieval and ChromaDB vector search, combining results through Reciprocal Rank Fusion (RRF).</li>
+                <li>Built a stateful LangGraph pipeline for document retrieval, prompt construction, and LLM-based answer generation using GPT-4o-mini.</li>
+              </ul>
+            </div>
+            <div>
+              <p class="font-semibold">Healthcare MCP Server – AI Powered <span class="font-mono text-xs font-normal text-zinc-600">(Python, FastMCP, SQLite, SQL, Streamable HTTP)</span></p>
+              <ul class="list-disc pl-5 mt-1 space-y-0.5 text-zinc-800">
+                <li>Built an MCP server exposing 4 reusable tools for patient risk scoring, readmission analysis, database schema inspection, and SQL querying.</li>
+                <li>Implemented rule-based clinical risk classification using diagnoses, medications, lab results, and visit history to identify potential high-risk patients.</li>
+                <li>Enabled AI clients to access SQLite healthcare data through Streamable HTTP, with validated inputs and controlled, read-only SQL execution.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+          <div>
+            <h3 class="font-mono font-bold uppercase bg-zinc-100 px-2.5 py-1 border-l-4 border-zineInk mb-2">Skills Summary</h3>
+            <ul class="space-y-1 text-zinc-800 leading-relaxed">
+              <li><strong>Product Management:</strong> Product Strategy, Roadmapping &amp; Prioritization, User Research, Requirement Gathering (PRD / User Stories), Agile / Scrum, Stakeholder Collaboration</li>
+              <li><strong>Product Analytics:</strong> SQL, Python, Power BI, Data Profiling, KPI &amp; Metrics Definition, ETL, A/B Testing Concepts, Data-Driven Decision Making</li>
+              <li><strong>Design &amp; Delivery Tools:</strong> Figma, Jira, Git, CI/CD, Jupyter Notebook, VS Code</li>
+              <li><strong>AI &amp; Generative AI:</strong> AI Agents, Agent Workflows, RAG, LLMs, Prompt Engineering, MCP concepts, LangGraph, Ollama, ChromaDB</li>
+              <li><strong>Technical Foundation:</strong> Pandas, NumPy, Scikit-learn, TensorFlow, Keras, NLTK, Matplotlib, Flask, REST APIs &amp; API Integration, HTML, AWS (S3, IAM, EC2)</li>
+              <li><strong>Soft Skills:</strong> Analytical Thinking, Problem Solving, Communication, Stakeholder Management, Leadership, Time Management</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-mono font-bold uppercase bg-zinc-100 px-2.5 py-1 border-l-4 border-zineInk mb-2">Certifications, Honors &amp; Volunteer</h3>
+            <ul class="space-y-1 text-zinc-800 leading-relaxed">
+              <li>• <strong>AWS Generative AI Foundation:</strong> LLM fundamentals, prompt engineering, and applied AI workflows on AWS.</li>
+              <li>• <strong>Mastering Generative AI (GeeksforGeeks):</strong> Hands-on training in LLM fundamentals and practical generative AI applications.</li>
+              <li>• <strong>Google Data Analytics Certificate:</strong> Data cleaning, analysis, visualization, and SQL for actionable business insights.</li>
+              <li>• <strong>Research Methodology in Data Science:</strong> Data collection, statistical validation, and experimental evaluation techniques.</li>
+              <li>• <strong>Honors &amp; Awards:</strong> Academic Excellence Award (First Rank in Mathematics at college level), Merit Scholarship (NGO-sponsored), Club Excellence Award.</li>
+              <li>• <strong>Volunteer Experience:</strong> Tamil Mandram Club — event planning, logistics, and participant engagement.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" role="status" aria-live="polite" class="hide fixed bottom-6 left-1/2 z-50 bg-zineInk text-zineMustard border-2 border-zineMustard px-4 py-2.5 rounded-xl shadow-xl font-mono text-xs font-bold">
+    Copied!
+  </div>
+
+  <script>
+    // =====================================================================
+    // 1. RETRO MANILA FOLDER & FILE DRAWER (#noted-zine)
+    // =====================================================================
+    const manilaFolders = [
+      {
+        tab: "TAB 01 // DISCOVERY",
+        code: "DOSSIER FILE #A-01 · USER BEHAVIOR",
+        title: "LOOK BEYOND SURFACE VANITY NUMBERS",
+        summary: "Before designing features or writing queries, examine how users actually enter, engage, and return across cohorts and funnels.",
+        rule: "Diagnose behavioral friction with cohort and funnel evidence before assuming what users need.",
+        appliedIn: "APPLIED IN: SOCIAL MEDIA PRODUCT ANALYTICS",
+        bullets: [
+          "Evaluated DAU/MAU stickiness to separate habitual core usage from one-off session spikes.",
+          "Mapped retention cohorts and conversion funnels to locate exact drop-off steps before proposing product changes."
+        ],
+        ctaLabel: "OPEN SOCIAL MEDIA ANALYTICS BOX ↗",
+        caseIndex: 0
+      },
+      {
+        tab: "TAB 02 // HYPOTHESIS",
+        code: "DOSSIER FILE #B-02 · RETRIEVAL & GROUNDING",
+        title: "TURN SCATTERED INFORMATION INTO CITED ANSWERS",
+        summary: "Users abandon AI assistants when answers cannot be verified. Combining lexical precision with semantic understanding restores trust.",
+        rule: "Ground every generative response in verifiable source citations rather than unanchored fluency.",
+        appliedIn: "APPLIED IN: ADVANCED RAG DOCUMENTATION ASSISTANT",
+        bullets: [
+          "Hypothesis: Neither pure BM25 keyword search nor pure ChromaDB vector search handles both exact function names and conceptual queries.",
+          "Merged both via Reciprocal Rank Fusion (RRF) inside a stateful LangGraph pipeline using GPT-4o-mini with source citations."
+        ],
+        ctaLabel: "OPEN HYBRID RAG ASSISTANT BOX ↗",
+        caseIndex: 1
+      },
+      {
+        tab: "TAB 03 // TRADEOFFS",
+        code: "DOSSIER FILE #C-03 · GUARDRAILS & SCOPE",
+        title: "CONSTRAIN AI POWER INTO PREDICTABLE TOOLS",
+        summary: "In sensitive domains like healthcare workflows, reliability and clear boundaries matter far more than open-ended AI autonomy.",
+        rule: "Define strict read-only boundaries and explicit V1 vs. V2 scope so users can trust the system.",
+        appliedIn: "APPLIED IN: HEALTHCARE MCP SERVER – AI POWERED",
+        bullets: [
+          "Trade-off: Rejected open-ended AI SQL generation in favor of 4 scoped FastMCP tools (risk scoring, readmission analysis, schema inspection, SQL querying).",
+          "Enforced input validation and controlled, read-only SQLite execution over Streamable HTTP (technical prototype, non-clinical)."
+        ],
+        ctaLabel: "OPEN HEALTHCARE MCP SERVER BOX ↗",
+        caseIndex: 2
+      }
+    ];
+
+    function selectManilaFolder(index) {
+      const folder = manilaFolders[index];
+      if (!folder) return;
+      // Clear filter highlight dim state when user manually clicks a tab
+      [0, 1, 2].forEach(i => {
+        const tab = document.getElementById(`tab-folder-${i}`);
+        if (!tab) return;
+        const active = i === index;
+        tab.setAttribute('aria-selected', active ? 'true' : 'false');
+        tab.classList.toggle('bg-manilaLight', active);
+        tab.classList.toggle('text-zineInk', active);
+        tab.classList.toggle('py-2.5', active);
+        tab.classList.toggle('bg-manilaMid', !active);
+        tab.classList.toggle('text-zineInk/80', !active);
+        tab.classList.toggle('py-2', !active);
+      });
+
+      const panel = document.getElementById('manilaFolderPanel');
+      if (panel) {
+        const bulletsHtml = folder.bullets.map(item => `
+          <li class="flex items-start gap-2.5">
+            <span class="text-terracotta font-mono text-xs mt-1 shrink-0" aria-hidden="true">▸</span>
+            <span>${item}</span>
+          </li>
+        `).join('');
+
+        panel.innerHTML = `
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b-2 border-dashed border-zineInk/30 pb-3.5 mb-6">
+            <span class="px-3 py-1 bg-terracotta text-white border-2 border-zineInk font-mono text-[11px] font-bold uppercase tracking-wider">
+              ${folder.code}
+            </span>
+            <span class="font-mono text-xs font-bold uppercase tracking-wider text-zineInk/85">
+              ${folder.tab}
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
+            <div class="lg:col-span-7 flex flex-col justify-between space-y-5">
+              <div>
+                <h3 class="font-display text-3xl sm:text-5xl text-zineInk uppercase leading-[0.98] tracking-tight mb-4">
+                  ${folder.title}
+                </h3>
+                <p class="text-sm sm:text-base text-zineInk/90 leading-relaxed">
+                  ${folder.summary}
+                </p>
+              </div>
+
+              <div class="bg-[#111B31] text-paperWhite border-2 border-zineInk rounded-xl p-4 sm:p-5 shadow-[4px_4px_0px_#1A1817] font-mono text-xs leading-relaxed">
+                <span class="text-[#F59E6C] font-bold uppercase">STRATEGIST RULE:</span> ${folder.rule}
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 bg-paperWhite border-2 border-zineInk rounded-xl p-5 shadow-[5px_5px_0px_#C85A32] flex flex-col justify-between space-y-4">
+              <div>
+                <p class="font-mono text-[10px] font-bold uppercase tracking-wider text-terracottaDark mb-3">
+                  ${folder.appliedIn}
+                </p>
+                <ul class="space-y-2.5 text-xs sm:text-sm text-zineInk/90 leading-relaxed">
+                  ${bulletsHtml}
+                </ul>
+              </div>
+
+              <button
+                type="button"
+                onclick="openCaseModal(${folder.caseIndex})"
+                class="w-full py-3 px-4 rounded-lg bg-terracotta text-white font-mono text-xs font-bold uppercase tracking-wider border-2 border-zineInk shadow-[3px_3px_0px_#1A1817] hover:bg-zineInk transition-colors cursor-pointer"
+              >
+                ${folder.ctaLabel}
+              </button>
+            </div>
+          </div>
+        `;
+      }
+    }
+
+    function filterStrategistMemo(category) {
+      document.querySelectorAll('.memo-chip').forEach(btn => {
+        const isSelected = btn.getAttribute('data-memo-filter') === category;
+        btn.classList.toggle('bg-zineMustard', isSelected);
+        btn.classList.toggle('bg-paperWhite', !isSelected);
+      });
+
+      const tab0 = document.getElementById('tab-folder-0'); // 01 // DISCOVERY (Behavioral Analytics)
+      const tab1 = document.getElementById('tab-folder-1'); // 02 // HYPOTHESIS (AI RAG)
+      const tab2 = document.getElementById('tab-folder-2'); // 03 // TRADEOFFS (AI Guardrails)
+      if (!tab0 || !tab1 || !tab2) return;
+
+      // Reset highlight rings & opacity first
+      [tab0, tab1, tab2].forEach(t => {
+        t.classList.remove('opacity-45', 'ring-3', 'ring-zineMustard');
+      });
+
+      if (category === 'all') {
+        selectManilaFolder(0);
+        showToast('Showing all strategy bets across Discovery, Hypothesis & Trade-offs');
+      } else if (category === 'ai') {
+        tab0.classList.add('opacity-45');
+        tab1.classList.add('ring-3', 'ring-zineMustard');
+        tab2.classList.add('ring-3', 'ring-zineMustard');
+        selectManilaFolder(1);
+        showToast('Highlighted AI & Guardrails folders (02 // Hypothesis & 03 // Trade-offs)');
+      } else if (category === 'analytics') {
+        tab0.classList.add('ring-3', 'ring-zineMustard');
+        tab1.classList.add('opacity-45');
+        tab2.classList.add('opacity-45');
+        selectManilaFolder(0);
+        showToast('Highlighted Behavioral Analytics folder (01 // Discovery)');
+      }
+    }
+
+    // =====================================================================
+    // 2. INTERACTIVE RED VINTAGE TYPEWRITER (#noted-zine)
+    // =====================================================================
+    const typewriterPrinciples = [
+      {
+        tag: "PRD_MANIFESTO_01.TXT",
+        text: "Don't just ask HOW to build it — start with WHAT to build and WHY it solves a real user problem."
+      },
+      {
+        tag: "PRD_MANIFESTO_02.TXT",
+        text: "Understand user behavior through cohorts, funnels, and SQL evidence before making product assumptions."
+      },
+      {
+        tag: "PRD_MANIFESTO_03.TXT",
+        text: "A useful AI product must also be controlled and trustworthy: cite sources and enforce read-only guardrails."
+      }
+    ];
+
+    let currentPrincipleIdx = 0;
+    let typingTimer = null;
+
+    function typePrinciple(idx) {
+      currentPrincipleIdx = idx % typewriterPrinciples.length;
+      const item = typewriterPrinciples[currentPrincipleIdx];
+      const tagEl = document.getElementById('typewriterDocTag');
+      const outEl = document.getElementById('typewriterOutput');
+      if (!tagEl || !outEl) return;
+
+      if (typingTimer) clearInterval(typingTimer);
+      tagEl.textContent = item.tag;
+      outEl.textContent = '';
+
+      let charIdx = 0;
+      typingTimer = setInterval(() => {
+        if (charIdx < item.text.length) {
+          outEl.textContent += item.text.charAt(charIdx);
+          charIdx++;
+        } else {
+          clearInterval(typingTimer);
+          typingTimer = null;
+        }
+      }, 22);
+    }
+
+    function cyclePrinciple() {
+      typePrinciple((currentPrincipleIdx + 1) % typewriterPrinciples.length);
+    }
+
+    // =====================================================================
+    // 3. INTERACTIVE 6-PART CASE STUDY DOSSIER MODAL (#caseModal)
+    // =====================================================================
+    const caseStudies = [
+      {
+        tag: "CASE STUDY 01 / 03 · PRODUCT ANALYTICS",
+        title: "Social Media Product Analytics",
+        badge: "DAU/MAU · COHORTS · FUNNELS",
+        problem: "Understanding how users genuinely interact with a social media product beyond surface-level vanity activity counts.",
+        whyItMatters: "Without behavioral visibility into habit formation and drop-off points, product teams risk shipping features that inflate views while retention quietly erodes.",
+        approach: "Examined user engagement, DAU/MAU stickiness ratios, longitudinal retention cohorts, and multi-step conversion funnels using structured product metrics and analytical dashboards.",
+        whatIBuilt: "An analytical workflow and metric framework mapping user progression across activation, recurring engagement, cohort retention decay, and funnel bottlenecks (presented conceptually without fabricated statistics).",
+        whatILearned: "Product metrics should isolate where users struggle or build recurring habits—pairing a leading engagement signal with retention checkpoints prevents misleading conclusions.",
+        whatsNext: "Proposed V2 Enhancements: Instrument event-level behavioral triggers to run segmented cohort comparisons across onboarding variants and validate hypothesis-driven retention experiments.",
+        sandboxHtml: `
+          <div class="bg-crosswordCream border-2 border-zineInk rounded-xl p-4 sm:p-5">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+              <span class="font-mono text-xs font-bold uppercase text-typewriterRed">INTERACTIVE LENS · SELECT METRIC VIEW</span>
+              <div class="flex gap-1.5">
+                <button type="button" onclick="setAnalyticsLens('stickiness')" class="px-2.5 py-1 rounded bg-zineMustard border border-zineInk font-mono text-[10px] font-bold cursor-pointer">DAU/MAU</button>
+                <button type="button" onclick="setAnalyticsLens('cohorts')" class="px-2.5 py-1 rounded bg-white border border-zineInk font-mono text-[10px] font-bold cursor-pointer">COHORTS</button>
+                <button type="button" onclick="setAnalyticsLens('funnel')" class="px-2.5 py-1 rounded bg-white border border-zineInk font-mono text-[10px] font-bold cursor-pointer">FUNNEL</button>
+              </div>
+            </div>
+            <div id="analyticsLensOutput" class="bg-white border border-zineInk rounded-lg p-3.5 text-xs sm:text-sm text-zineInk leading-relaxed">
+              <strong>DAU / MAU Stickiness Lens:</strong> Evaluates how frequently monthly active users return on a daily basis—revealing whether the product is becoming a daily habit or an occasional utility.
+            </div>
+          </div>
+        `
+      },
+      {
+        tag: "CASE STUDY 02 / 03 · HYBRID RAG SYSTEM",
+        title: "Advanced RAG Documentation Assistant",
+        badge: "PYTHON · LANGGRAPH · CHROMADB · BM25 · GPT-4O-MINI",
+        problem: "Finding accurate, trustworthy answers across dense technical documentation is slow—traditional keyword search misses intent, while pure vector search misses exact terms and risks LLM hallucinations.",
+        whyItMatters: "Developers and technical users abandon AI assistants the moment they receive plausible-sounding answers without verifiable source grounding.",
+        approach: "Combined lexical BM25 keyword retrieval with ChromaDB semantic vector search (Sentence Transformers), merging rankings via Reciprocal Rank Fusion (RRF) inside a stateful LangGraph orchestration pipeline.",
+        whatIBuilt: "An implemented RAG assistant using Python, LangGraph, ChromaDB, Sentence Transformers, BM25, and GPT-4o-mini that delivers context-grounded answers complete with inline source citations.",
+        whatILearned: "Hybrid retrieval with RRF bridges the gap between exact syntax matching and conceptual queries, while explicit citations turn model output into a verifiable user experience.",
+        whatsNext: "Proposed V2 Enhancements: Add automated user feedback signals (thumbs up/down on citations), semantic query caching for repeated documentation lookups, and evaluation benchmarks over multi-hop queries.",
+        sandboxHtml: `
+          <div class="bg-crosswordCream border-2 border-zineInk rounded-xl p-4 sm:p-5">
+            <div class="flex items-center justify-between font-mono text-xs font-bold mb-2">
+              <span>BM25 KEYWORD</span>
+              <span class="text-typewriterRed">HYBRID RRF TRADE-OFF SLIDER</span>
+              <span>CHROMADB VECTOR</span>
+            </div>
+            <input type="range" min="0" max="100" value="50" oninput="updateRrfSandbox(this.value)" class="w-full accent-[#C82828] cursor-pointer mb-2" aria-label="Hybrid RRF retrieval balance slider" />
+            <div id="rrfSandboxOutput" class="bg-white border border-zineInk rounded-lg p-3.5 text-xs sm:text-sm text-zineInk leading-relaxed">
+              <strong>Balanced Hybrid RRF (50 / 50):</strong> Reciprocal Rank Fusion merges exact function/error-code matches from BM25 with semantic context from ChromaDB before passing grounded chunks to GPT-4o-mini with source citations.
+            </div>
+          </div>
+        `
+      },
+      {
+        tag: "CASE STUDY 03 / 03 · RESPONSIBLE AI INFRASTRUCTURE",
+        title: "Healthcare MCP Server – AI Powered",
+        badge: "PYTHON · FASTMCP · SQLITE · SQL · STREAMABLE HTTP",
+        problem: "Healthcare data stored in relational SQLite databases requires structured, reliable access—giving AI clients unrestricted SQL execution creates data integrity and safety risks.",
+        whyItMatters: "In sensitive domains like healthcare workflows, usefulness depends on strict guardrails, deterministic logic, and clear operational boundaries.",
+        approach: "Designed a Model Context Protocol (MCP) server exposing 4 focused, reusable tools over Streamable HTTP rather than open-ended database write access.",
+        whatIBuilt: "A FastMCP Python server with 4 tools (patient risk scoring, readmission analysis, database schema inspection, and SQL querying), rule-based clinical risk classification (diagnoses, medications, lab results, visit history), input validation, and controlled read-only SQL execution. (Technical prototype only — not clinically validated or deployed for real patient care.)",
+        whatILearned: "Scoping AI capabilities into validated, read-only tools makes model interactions predictable, auditable, and safer to integrate.",
+        whatsNext: "Proposed V2 Enhancements: Add role-based tool permissions, structured audit logging for every read-only query, and clinician-in-the-loop threshold review workflows.",
+        sandboxHtml: `
+          <div class="bg-crosswordCream border-2 border-zineInk rounded-xl p-4 sm:p-5">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2.5">
+              <span class="font-mono text-xs font-bold uppercase text-emerald-900">READ-ONLY SQL GUARDRAIL TESTER</span>
+              <div class="flex gap-1.5">
+                <button type="button" onclick="testSqlGuardrail('select')" class="px-2.5 py-1 rounded bg-emerald-800 text-white border border-zineInk font-mono text-[10px] font-bold cursor-pointer">TEST SELECT</button>
+                <button type="button" onclick="testSqlGuardrail('drop')" class="px-2.5 py-1 rounded bg-typewriterRed text-white border border-zineInk font-mono text-[10px] font-bold cursor-pointer">TEST UPDATE/DROP</button>
+              </div>
+            </div>
+            <div id="sqlGuardrailOutput" class="bg-zineInk text-emerald-300 font-mono text-xs rounded-lg p-3.5 leading-relaxed">
+              ✓ ALLOWED: SELECT patient_id, risk_level FROM patient_risk_summary LIMIT 10; → Validated read-only execution via FastMCP Streamable HTTP.
+            </div>
+          </div>
+        `
+      }
+    ];
+
+    let currentCaseIdx = 0;
+
+    function openCaseModal(index) {
+      currentCaseIdx = (index + caseStudies.length) % caseStudies.length;
+      const cs = caseStudies[currentCaseIdx];
+      document.getElementById('caseModalTag').textContent = cs.tag;
+      document.getElementById('caseModalBody').innerHTML = `
+        <div>
+          <span class="inline-block px-2.5 py-0.5 bg-zineInk text-zineMustard font-mono text-[10px] font-bold uppercase mb-2">${cs.badge}</span>
+          <h2 id="caseModalHeading" class="font-display text-4xl sm:text-5xl text-zineInk uppercase leading-none">${cs.title}</h2>
+        </div>
+
+        ${cs.sandboxHtml}
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white border-2 border-zineInk rounded-xl p-4 shadow-[4px_4px_0px_#1A1817]">
+            <p class="font-mono text-[10px] font-bold uppercase text-typewriterRed mb-1">01 · THE PROBLEM</p>
+            <p class="text-sm text-zineInk/90 leading-relaxed">${cs.problem}</p>
+          </div>
+          <div class="bg-white border-2 border-zineInk rounded-xl p-4 shadow-[4px_4px_0px_#1A1817]">
+            <p class="font-mono text-[10px] font-bold uppercase text-typewriterRed mb-1">02 · WHY IT MATTERS</p>
+            <p class="text-sm text-zineInk/90 leading-relaxed">${cs.whyItMatters}</p>
+          </div>
+          <div class="bg-white border-2 border-zineInk rounded-xl p-4 shadow-[4px_4px_0px_#1A1817]">
+            <p class="font-mono text-[10px] font-bold uppercase text-[#1D4ED8] mb-1">03 · MY APPROACH</p>
+            <p class="text-sm text-zineInk/90 leading-relaxed">${cs.approach}</p>
+          </div>
+          <div class="bg-white border-2 border-zineInk rounded-xl p-4 shadow-[4px_4px_0px_#1A1817]">
+            <p class="font-mono text-[10px] font-bold uppercase text-emerald-800 mb-1">04 · WHAT I BUILT (IMPLEMENTED)</p>
+            <p class="text-sm text-zineInk/90 leading-relaxed">${cs.whatIBuilt}</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-manilaLight border-2 border-zineInk rounded-xl p-4">
+            <p class="font-mono text-[10px] font-bold uppercase text-zineInk mb-1">05 · WHAT I LEARNED</p>
+            <p class="text-sm text-zineInk/90 leading-relaxed">${cs.whatILearned}</p>
+          </div>
+          <div class="bg-zineInk text-paperWhite border-2 border-zineInk rounded-xl p-4">
+            <p class="font-mono text-[10px] font-bold uppercase text-zineMustard mb-1">06 · WHAT&rsquo;S NEXT (FUTURE ROADMAP)</p>
+            <p class="text-sm text-paperWhite/95 leading-relaxed">${cs.whatsNext}</p>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('caseModal').classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCaseModal() {
+      document.getElementById('caseModal').classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+
+    function switchCase(delta) {
+      openCaseModal(currentCaseIdx + delta);
+    }
+
+    function setAnalyticsLens(mode) {
+      const out = document.getElementById('analyticsLensOutput');
+      if (!out) return;
+      if (mode === 'stickiness') {
+        out.innerHTML = `<strong>DAU / MAU Stickiness Lens:</strong> Evaluates how frequently monthly active users return on a daily basis—revealing whether the product is becoming a daily habit or an occasional utility.`;
+      } else if (mode === 'cohorts') {
+        out.innerHTML = `<strong>Cohort Retention Lens:</strong> Tracks groups of users signed up in the same period over subsequent days/weeks to separate healthy product retention from misleading top-of-funnel acquisition spikes.`;
+      } else {
+        out.innerHTML = `<strong>Conversion Funnel Lens:</strong> Maps sequential user steps from onboarding to core action—pinpointing exact friction steps where users drop off before experiencing product value.`;
+      }
+    }
+
+    function updateRrfSandbox(val) {
+      const n = parseInt(val, 10);
+      const out = document.getElementById('rrfSandboxOutput');
+      if (!out) return;
+      if (n < 35) {
+        out.innerHTML = `<strong>BM25 Keyword-Heavy (${100 - n}% Lexical):</strong> Maximizes exact matches for API flags, function signatures, and error codes, though conceptual paraphrases may rank lower.`;
+      } else if (n <= 65) {
+        out.innerHTML = `<strong>Balanced Hybrid RRF (${100 - n}% BM25 / ${n}% Vector):</strong> Reciprocal Rank Fusion merges exact keyword matches with semantic ChromaDB context before GPT-4o-mini generates cited answers.`;
+      } else {
+        out.innerHTML = `<strong>ChromaDB Vector-Heavy (${n}% Semantic):</strong> Excels at conceptual natural-language questions, paired with RRF so exact identifiers are not lost.`;
+      }
+    }
+
+    function testSqlGuardrail(type) {
+      const out = document.getElementById('sqlGuardrailOutput');
+      if (!out) return;
+      if (type === 'select') {
+        out.className = 'bg-zineInk text-emerald-300 font-mono text-xs rounded-lg p-3.5 leading-relaxed';
+        out.textContent = '✓ ALLOWED: SELECT patient_id, risk_level FROM patient_risk_summary LIMIT 10; → Validated read-only execution via FastMCP Streamable HTTP.';
+      } else {
+        out.className = 'bg-zineInk text-rose-300 font-mono text-xs rounded-lg p-3.5 leading-relaxed';
+        out.textContent = '✕ BLOCKED BY GUARDRAIL: UPDATE / DROP statement rejected. Healthcare MCP Server enforces strict input validation and read-only SQLite execution.';
+      }
+    }
+
+    // =====================================================================
+    // 4. INTERACTIVE PM & DATA SCIENCE CROSSWORD (#crossword-about)
+    // =====================================================================
+    const crosswordClues = [
+      {
+        title: "CLUE 1 ACROSS · DATA (9.35 GPA · BCA DATA SCIENCE)",
+        body: "Bachelor of Computer Application (Data Science) at <strong>SRM Institute of Science and Technology (GPA: 9.35)</strong> with <strong>First Rank in Mathematics</strong>, following Higher Secondary Education at <strong>Prasan Vidhya Bala Mandir Hr. Sec. School (GPA: 8.95)</strong>."
+      },
+      {
+        title: "CLUE 2 DOWN · RAG (HYBRID RETRIEVAL & LANGGRAPH)",
+        body: "Built the <strong>Advanced RAG Documentation Assistant</strong> using Python, LangGraph, ChromaDB, Sentence Transformers, BM25, and Reciprocal Rank Fusion (RRF) to generate source-cited answers with GPT-4o-mini."
+      },
+      {
+        title: "CLUE 3 ACROSS · METRICS (RUBIXE INTERNSHIP & ANALYTICS)",
+        body: "During my <strong>Data Engineer Internship at Rubixe Innovative Tech Solutions (Oct–Dec 2025)</strong>, I built automated Scikit-learn pipelines and evaluated models across Accuracy, Precision, Recall, F1-Score, ROC-AUC, and Confusion Matrix—complementing my <strong>Google Data Analytics Certificate</strong>."
+      },
+      {
+        title: "CLUE 4 ACROSS · MCP (MODEL CONTEXT PROTOCOL & GUARDRAILS)",
+        body: "Engineered the <strong>Healthcare MCP Server – AI Powered</strong> using Python, FastMCP, SQLite, SQL, and Streamable HTTP—exposing 4 validated, read-only tools for patient risk scoring, readmission analysis, schema inspection, and safe SQL querying."
+      }
+    ];
+
+    function selectClue(index) {
+      const clue = crosswordClues[index];
+      const box = document.getElementById('clueDisplayBox');
+      if (!clue || !box) return;
+      box.innerHTML = `
+        <p class="font-mono text-xs font-bold text-typewriterRed uppercase mb-1">${clue.title}</p>
+        <p class="text-sm text-zineInk leading-relaxed">${clue.body}</p>
+      `;
+    }
+
+    function showToolToast(message) {
+      showToast(message);
+    }
+
+    // =====================================================================
+    // 5. PM FIELD KIT FILTER & WORKFLOW INSPECTOR (#field-kit)
+    // =====================================================================
+    const fieldToolDetails = {
+      sql: {
+        tag: "SQL · EVIDENCE MAGNIFIER (DISCOVER & SHIP)",
+        body: "<strong>How I use SQL:</strong> Querying relational schemas, joining event logs, validating data hygiene, and diagnosing retention cohorts &amp; funnel drop-offs before assuming solutions—plus enforcing strict read-only SQL boundaries in my Healthcare MCP Server."
+      },
+      jira: {
+        tag: "JIRA · SPRINT KANBAN TICKET (SPEC & SHIP)",
+        body: "<strong>How I use JIRA:</strong> Breaking ambiguous product problems into clear user stories, edge-case acceptance criteria, and prioritized V1 vs. V2 backlogs so engineering has unambiguous scope."
+      },
+      notion: {
+        tag: "NOTION · PRD & DISCOVERY NOTEBOOK (DISCOVER & SPEC)",
+        body: "<strong>How I use Notion:</strong> Structuring crisp Product Requirements Documents (PRDs), decision logs, hypothesis trackers, and trade-off matrices that separate implemented V1 features from future ideas."
+      },
+      figma: {
+        tag: "FIGMA · WIREFRAME BLUEPRINT (SPEC & DESIGN)",
+        body: "<strong>How I use Figma:</strong> Sketching rapid user flows, low-fidelity wireframes, and interactive interface states (such as inline citation verification flows) to validate usability early."
+      },
+      excel: {
+        tag: "EXCEL · COHORT & FUNNEL LEDGER (DISCOVER & PRIORITIZE)",
+        body: "<strong>How I use Excel:</strong> Building cohort retention tables, funnel drop-off checks, pivot summaries, and Value vs. Feasibility prioritization scoring models."
+      },
+      postman: {
+        tag: "POSTMAN · API & MCP TEST BENCH (TEST & SHIP)",
+        body: "<strong>How I use Postman:</strong> Inspecting REST API payloads, verifying Streamable HTTP endpoints, and testing input validation &amp; read-only boundaries on AI tool schemas."
+      }
+    };
+
+    function filterFieldKit(phase) {
+      document.querySelectorAll('.kit-filter-btn').forEach(btn => {
+        const isSelected = btn.getAttribute('data-phase') === phase;
+        btn.classList.toggle('bg-zineMustard', isSelected);
+        btn.classList.toggle('bg-paperWhite', !isSelected);
+      });
+
+      document.querySelectorAll('.tool-artifact-card').forEach(card => {
+        const phases = (card.getAttribute('data-phases') || '').split(' ');
+        const matches = phase === 'all' || phases.includes(phase);
+        card.classList.toggle('is-dimmed', !matches);
+      });
+    }
+
+    function inspectFieldTool(toolKey) {
+      const info = fieldToolDetails[toolKey];
+      const tagEl = document.getElementById('kitInspectorTag');
+      const bodyEl = document.getElementById('kitInspectorBody');
+      if (!info || !tagEl || !bodyEl) return;
+      tagEl.textContent = info.tag;
+      bodyEl.innerHTML = info.body;
+    }
+
+    // =====================================================================
+    // 6. RESUME MODAL, CLIPBOARD COPY & TOAST HELPERS
+    // =====================================================================
+    function openResumeModal() {
+      const modal = document.getElementById('resumeModal');
+      if (!modal) return;
+      modal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeResumeModal() {
+      const modal = document.getElementById('resumeModal');
+      if (!modal) return;
+      modal.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
+
+    function copyEmail() {
+      const email = 'tarunkk.ds@gmail.com';
+      const ta = document.createElement('textarea');
+      ta.value = email;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand('copy');
+        showToast('Copied tarunkk.ds@gmail.com to clipboard!');
+      } catch (err) {
+        showToast('Email: tarunkk.ds@gmail.com');
+      }
+      document.body.removeChild(ta);
+    }
+
+    let toastTimer = null;
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      if (!toast) return;
+      toast.textContent = msg;
+      toast.classList.remove('hide');
+      toast.classList.add('show');
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('show');
+        toast.classList.add('hide');
+      }, 2800);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      const caseOpen = document.getElementById('caseModal').classList.contains('is-open');
+      const resumeOpen = document.getElementById('resumeModal').classList.contains('is-open');
+      if (e.key === 'Escape') {
+        if (caseOpen) closeCaseModal();
+        if (resumeOpen) closeResumeModal();
+      } else if (caseOpen) {
+        if (e.key === 'ArrowRight') switchCase(1);
+        if (e.key === 'ArrowLeft') switchCase(-1);
+      }
+    });
+
+    // Initialize default Manila Folder & Typewriter state on load
+    window.addEventListener('DOMContentLoaded', () => {
+      selectManilaFolder(0);
+      typePrinciple(0);
+    });
+  </script>
+
+  <script>
+  (function () {
+    var intro = document.getElementById('zine-intro');
+    if (!intro) return;
+    var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce) { document.body.classList.add('intro-done'); return; }
+    document.body.classList.add('intro-lock');
+
+    // Ransom-note style letters
+    var styles = [
+      ['#FAF8F5','#1B1917',''], ['#F4C414','#1B1917',''], ['#C85A32','#FAF8F5','serif'],
+      ['#1B2A4A','#F4C414',''], ['#EFE5CE','#8E1E1E','serif'], ['#1B1917','#FAF8F5','mono'],
+      ['#3A6EA5','#FAF8F5','']
+    ];
+    function build(el, text, startDelay) {
+      var n = 0;
+      text.split('').forEach(function (ch, i) {
+        if (ch === ' ') { var s = document.createElement('span'); s.className = 'zi-space'; el.appendChild(s); return; }
+        var st = styles[(i * 3 + n * 2) % styles.length]; n++;
+        var l = document.createElement('span');
+        l.className = 'zi-letter ' + st[2];
+        l.textContent = ch;
+        l.style.background = st[0]; l.style.color = st[1];
+        l.style.setProperty('--r0', (Math.random() * 80 - 40) + 'deg');
+        l.style.setProperty('--r1', (Math.random() * 8 - 4) + 'deg');
+        l.style.setProperty('--d', (startDelay + n * 0.07) + 's');
+        el.appendChild(l);
+      });
+    }
+    build(document.getElementById('zi-name1'), 'TARUN', 0.3);
+    build(document.getElementById('zi-name2'), 'KUMAR E', 0.8);
+
+    // Typewriter role line
+    var phrase = 'APM · PRODUCT ANALYST · ZINE MAKER';
+    var typed = document.getElementById('zi-typed'), ti = 0, typer;
+    var typeStart = setTimeout(function () {
+      typer = setInterval(function () {
+        typed.textContent = phrase.slice(0, ++ti);
+        if (ti >= phrase.length) clearInterval(typer);
+      }, 45);
+    }, 1900);
+
+    // Percent counter synced with bar (starts 2.0s, lasts 1.6s)
+    var pct = document.getElementById('zi-pct'), t0;
+    var counterStart = setTimeout(function () {
+      t0 = performance.now();
+      (function tick(now) {
+        var p = Math.min(1, (now - t0) / 1600);
+        pct.textContent = 'ASSEMBLING ZINE… ' + Math.round(p * 100) + '%';
+        if (p < 1) requestAnimationFrame(tick);
+      })(t0);
+    }, 2000);
+
+    var finished = false;
+    function reveal() {
+      if (finished) return; finished = true;
+      clearTimeout(typeStart); clearTimeout(counterStart); clearInterval(typer);
+      clearTimeout(autoTimer);
+      intro.classList.add('cutting');
+      setTimeout(function () {
+        intro.classList.add('cut');
+        document.body.classList.remove('intro-lock');
+        document.body.classList.add('intro-done');
+        window.scrollTo(0, 0);
+        setTimeout(function () { intro.classList.add('gone'); }, 1000);
+      }, 800);
+    }
+    var autoTimer = setTimeout(reveal, 4000);
+    document.getElementById('zi-skip').addEventListener('click', reveal);
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') reveal(); });
+  })();
+  </script>
+</body>
+</html>
