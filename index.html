@@ -287,24 +287,49 @@
     }
 
     /* Print Resume Support */
+    @page { size: A4; margin: 12mm; }
     @media print {
-      body * {
-        visibility: hidden;
+      html, body {
+        height: auto !important;
+        overflow: visible !important;
+        background: #fff !important;
       }
-      #resumePrintArea, #resumePrintArea * {
-        visibility: visible;
-      }
-      #resumePrintArea {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        background: #FFFFFF !important;
-        padding: 0 !important;
-      }
-      .no-print {
+      /* Remove everything else from layout (not just hide it) */
+      body > *:not(#resumeModal),
+      #zine-intro, header, main, #toast, .no-print {
         display: none !important;
       }
+      /* Un-fix the modal so it flows across multiple pages */
+      #resumeModal {
+        display: block !important;
+        position: static !important;
+        inset: auto !important;
+        background: #fff !important;
+        backdrop-filter: none !important;
+        padding: 0 !important;
+        overflow: visible !important;
+        height: auto !important;
+      }
+      #resumeModal > div {
+        max-height: none !important;
+        height: auto !important;
+        overflow: visible !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      #resumePrintArea {
+        position: static !important;
+        width: 100% !important;
+        padding: 0 !important;
+        background: #fff !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      #resumePrintArea h3, #resumePrintArea li { break-inside: avoid; page-break-inside: avoid; }
+      #resumePrintArea h3 { break-after: avoid; page-break-after: avoid; }
     }
 
     /* ===== ZINE CUT-AND-REVEAL INTRO ===== */
@@ -556,7 +581,7 @@
               </p>
 
               <p class="mt-3 max-w-xl mx-auto text-xs sm:text-sm md:text-base text-zineInk/90 leading-relaxed font-medium">
-                BCA (Data Science) graduate from <strong>SRM Institute of Science and Technology (9.35 GPA)</strong>. I bridge Python, SQL, LLMs, and behavioral analytics with practical product problem-solving—turning complex workflows into clear, trustworthy user experiences.
+                BCA (Data Science) graduate from <strong>SRM Institute of Science and Technology (9.35 GPA)</strong>. I bridge Python, SQL, LLMs, and behavioral analytics with practical product problem-solving—turning real operational problems and complex workflows into clear, useful product experiences.
               </p>
 
               <div class="mt-6 flex flex-wrap items-center justify-center gap-3">
@@ -663,7 +688,7 @@
               &ldquo;Good products begin with better questions.&rdquo;
             </h3>
             <p class="text-xs sm:text-sm md:text-base text-zineInk/90 leading-relaxed mb-4">
-              Most portfolios show what was built. This board shows the bets, trade-offs, and guardrails behind why I built it&mdash;connecting Data Science rigor (<strong>9.35 GPA</strong>) with user-first product thinking.
+              From supply-chain operations to AI workflows, this board shows the problems, trade-offs, and product decisions behind what I build&mdash;connecting Data Science rigor (<strong>9.35 GPA</strong>) with practical product thinking.
             </p>
 
             <!-- 3 Interactive Quick Filter Chips -->
@@ -878,18 +903,41 @@
         <div class="text-center mb-12 relative">
           <div class="inline-flex items-center gap-2 bg-zineMustard border-2 border-zineInk px-3.5 py-1 rounded-full font-mono text-xs font-bold uppercase tracking-wider shadow-[3px_3px_0px_#1A1817] mb-3">
             <span>★</span>
-            <span>SELECTED CASE STUDIES · 3 PRODUCT BUILDS</span>
+            <span>SELECTED CASE STUDIES · 4 PRODUCT BUILDS</span>
           </div>
           <h2 class="font-display text-5xl sm:text-7xl md:text-8xl tracking-tight text-zineMustard uppercase drop-shadow-[4px_4px_0px_#1A1817]">
             THINK OUTSIDE THE BACKLOG
           </h2>
           <p class="text-sm sm:text-base text-white/95 max-w-2xl mx-auto mt-3 font-medium">
-            Open any corrugated project box below to inspect the 6-part story: <strong>Problem → Why It Matters → Approach → What I Built → What I Learned → What&rsquo;s Next</strong>, plus interactive sandboxes.
+            Open any project box below to inspect the 6-part story: <strong>Problem → Why It Matters → Approach → What I Built → What I Learned → What&rsquo;s Next</strong>, plus interactive sandboxes.
           </p>
         </div>
 
         <!-- 3 Corrugated Cardboard Project Boxes -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+
+          <!-- FLAGSHIP PROJECT 01: MilkRoute Supply Chain Platform -->
+          <article class="cardboard-surface rounded-xl p-6 flex flex-col justify-between relative group ring-4 ring-zineMustard">
+            <div class="w-24 h-5 bg-[#E7D3B0]/85 border-x border-dashed border-zineInk/30 mx-auto -mt-8 mb-4 shadow-2xs"></div>
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-0.5 bg-zineInk text-zineMustard font-mono text-[10px] font-bold uppercase">BOX 01 · FLAGSHIP PRODUCT</span>
+                <span class="font-mono text-[11px] font-bold text-zineInk/80">FLUTTER · FIREBASE</span>
+              </div>
+              <h3 class="font-display text-3xl sm:text-4xl text-zineInk uppercase leading-none mb-3">MILKROUTE · DISTRIBUTION PLATFORM</h3>
+              <p class="text-sm text-zineInk/90 leading-relaxed mb-4">A two-role milk distribution app that connects owners and delivery drivers, organizes route-based shop deliveries, tracks performance, and verifies received quantities through QR confirmation.</p>
+              <div class="bg-paperWhite/95 border-2 border-zineInk rounded-lg p-3.5 mb-5 font-mono text-[11px] space-y-2">
+                <div class="flex justify-between text-zineInk/70"><span>LIVE PRODUCT ADOPTION</span><span class="font-bold text-emerald-800">100 USERS</span></div>
+                <div class="grid grid-cols-2 gap-1.5 text-center">
+                  <div class="bg-[#DBEAFE] p-2 rounded border border-zineInk/20 font-bold">OWNER CONSOLE</div>
+                  <div class="bg-[#FEF08A] p-2 rounded border border-zineInk/20 font-bold">DRIVER APP</div>
+                  <div class="bg-[#BBF7D0] p-2 rounded border border-zineInk/20 font-bold">QR CONFIRMATION</div>
+                  <div class="bg-[#FBCFE8] p-2 rounded border border-zineInk/20 font-bold">PDF REPORTS</div>
+                </div>
+              </div>
+            </div>
+            <button type="button" onclick="openCaseModal(0)" class="w-full py-3 px-4 rounded-lg bg-zineMustard text-zineInk font-mono text-xs font-bold uppercase tracking-wider border-2 border-zineInk shadow-[4px_4px_0px_#1A1817] group-hover:bg-white transition-colors cursor-pointer">OPEN FLAGSHIP CASE STUDY →</button>
+          </article>
 
           <!-- PROJECT 01: Social Media Product Analytics -->
           <article class="cardboard-surface rounded-xl p-6 flex flex-col justify-between relative group">
@@ -898,7 +946,7 @@
             <div>
               <div class="flex items-center justify-between gap-2 mb-3">
                 <span class="px-2.5 py-0.5 bg-zineInk text-zineMustard font-mono text-[10px] font-bold uppercase">
-                  BOX 01 · ANALYTICS
+                  BOX 02 · ANALYTICS
                 </span>
                 <span class="font-mono text-[11px] font-bold text-zineInk/80">DAU/MAU · COHORTS</span>
               </div>
@@ -926,7 +974,7 @@
 
             <button
               type="button"
-              onclick="openCaseModal(0)"
+              onclick="openCaseModal(1)"
               class="w-full py-3 px-4 rounded-lg bg-zineMustard text-zineInk font-mono text-xs font-bold uppercase tracking-wider border-2 border-zineInk shadow-[4px_4px_0px_#1A1817] group-hover:bg-white transition-colors cursor-pointer"
             >
               OPEN DOSSIER &amp; LENS SANDBOX →
@@ -940,7 +988,7 @@
             <div>
               <div class="flex items-center justify-between gap-2 mb-3">
                 <span class="px-2.5 py-0.5 bg-typewriterRed text-white font-mono text-[10px] font-bold uppercase">
-                  BOX 02 · HYBRID RAG
+                  BOX 03 · HYBRID RAG
                 </span>
                 <span class="font-mono text-[11px] font-bold text-zineInk/80">LANGGRAPH · RRF</span>
               </div>
@@ -970,7 +1018,7 @@
 
             <button
               type="button"
-              onclick="openCaseModal(1)"
+              onclick="openCaseModal(2)"
               class="w-full py-3 px-4 rounded-lg bg-typewriterRed text-white font-mono text-xs font-bold uppercase tracking-wider border-2 border-zineInk shadow-[4px_4px_0px_#1A1817] group-hover:bg-zineInk transition-colors cursor-pointer"
             >
               OPEN DOSSIER &amp; RRF SLIDER →
@@ -984,7 +1032,7 @@
             <div>
               <div class="flex items-center justify-between gap-2 mb-3">
                 <span class="px-2.5 py-0.5 bg-emerald-900 text-emerald-200 font-mono text-[10px] font-bold uppercase">
-                  BOX 03 · RESPONSIBLE AI
+                  BOX 04 · RESPONSIBLE AI
                 </span>
                 <span class="font-mono text-[11px] font-bold text-zineInk/80">FASTMCP · SQLITE</span>
               </div>
@@ -1013,7 +1061,7 @@
 
             <button
               type="button"
-              onclick="openCaseModal(2)"
+              onclick="openCaseModal(3)"
               class="w-full py-3 px-4 rounded-lg bg-emerald-800 text-white font-mono text-xs font-bold uppercase tracking-wider border-2 border-zineInk shadow-[4px_4px_0px_#1A1817] group-hover:bg-zineInk transition-colors cursor-pointer"
             >
               OPEN DOSSIER &amp; SQL GUARDRAIL →
@@ -1413,7 +1461,7 @@
     <div class="bg-paperWhite w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-t-2xl sm:rounded-2xl border-4 border-zineInk shadow-2xl">
       <div class="sticky top-0 z-20 bg-zineMustard border-b-3 border-zineInk px-4 sm:px-6 py-3.5 flex items-center justify-between gap-3">
         <span id="caseModalTag" class="font-mono text-xs font-bold uppercase tracking-wider text-zineInk">
-          CASE STUDY 01 / 03
+          CASE STUDY 01 / 04
         </span>
         <div class="flex items-center gap-2">
           <button type="button" onclick="switchCase(-1)" class="px-2.5 py-1 rounded bg-white border-2 border-zineInk font-mono text-xs font-bold cursor-pointer">← PREV</button>
@@ -1566,17 +1614,17 @@
     // =====================================================================
     const manilaFolders = [
       {
-        tab: "TAB 01 // DISCOVERY",
-        code: "DOSSIER FILE #A-01 · USER BEHAVIOR",
-        title: "LOOK BEYOND SURFACE VANITY NUMBERS",
-        summary: "Before designing features or writing queries, examine how users actually enter, engage, and return across cohorts and funnels.",
-        rule: "Diagnose behavioral friction with cohort and funnel evidence before assuming what users need.",
-        appliedIn: "APPLIED IN: SOCIAL MEDIA PRODUCT ANALYTICS",
+        tab: "TAB 01 // OPERATIONS",
+        code: "DOSSIER FILE #A-01 · DISTRIBUTION OPERATIONS",
+        title: "MAKE EVERY DELIVERY ACCOUNTABLE",
+        summary: "A distribution workflow has several handoffs: owner to driver, driver to shop, and dispatched stock to received quantity. The product should make each handoff visible.",
+        rule: "Connect inventory, route assignments, delivery execution, and shop confirmation in one operational workflow.",
+        appliedIn: "APPLIED IN: MILKROUTE DISTRIBUTION PLATFORM",
         bullets: [
-          "Evaluated DAU/MAU stickiness to separate habitual core usage from one-off session spikes.",
-          "Mapped retention cohorts and conversion funnels to locate exact drop-off steps before proposing product changes."
+          "Created separate owner and driver access paths, with owner controls for products, routes, shops, driver assignments, and stock allocation.",
+          "Added QR-based shop quantity confirmation, route/shop performance views, driver delivery comparisons, and PDF sales exports."
         ],
-        ctaLabel: "OPEN SOCIAL MEDIA ANALYTICS BOX ↗",
+        ctaLabel: "OPEN MILKROUTE CASE STUDY ↗",
         caseIndex: 0
       },
       {
@@ -1772,7 +1820,36 @@
     // =====================================================================
     const caseStudies = [
       {
-        tag: "CASE STUDY 01 / 03 · PRODUCT ANALYTICS",
+        tag: "FLAGSHIP CASE STUDY 01 / 04 · SUPPLY CHAIN OPERATIONS",
+        title: "MilkRoute — Milk Distribution Management Platform",
+        badge: "FLUTTER · FIREBASE · QR-BASED DELIVERY CONFIRMATION · 100 USERS",
+        problem: "Milk distribution involves repeated coordination between the distributor, delivery drivers, and retail shops. Managing products, stock allocation, route assignments, delivered quantities, and sales records across these roles can create operational friction and quantity mismatches.",
+        whyItMatters: "A mismatch between dispatched and received quantities can affect stock accuracy, shop relationships, and day-to-day visibility. Owners also need a clear view of which shops, routes, and drivers are handling the most delivery volume.",
+        approach: "Built a role-based application around the daily distribution workflow. The owner manages products, routes, shops, drivers, and stock allocation; drivers use a separate login to access their assigned delivery work; shopkeepers confirm received quantities through QR-based verification.",
+        whatIBuilt: "A Flutter application backed by Firebase with separate credential-based Owner and Driver logins. Owners can add and customize products, create delivery routes, add multiple shops to each route, assign drivers, and allocate stock. The platform provides shop-wise and route-wise performance views, driver delivery-volume comparisons, and downloadable PDF sales details. At delivery, shopkeepers scan a QR code to confirm quantities received, helping reduce dispatch-versus-receipt discrepancies. The product has been scaled to 100 users.",
+        whatILearned: "The workflow needs to work for multiple stakeholders, not just the business owner. Separating owner controls from driver tasks, connecting shops to routes, and adding confirmation at the point of receipt makes the operational handoff more traceable.",
+        decisions: [
+          { decision: "Separate Owner and Driver logins", why: "Drivers only need their assigned deliveries, while owners need full control of products, routes and stock.", result: "A cleaner handoff: each role sees only what it needs." },
+          { decision: "QR confirmation at the shop", why: "The most reliable moment to verify a quantity is at the point of receipt, not after the driver has left.", result: "Dispatched vs. received quantities are traceable, and mismatches surface early." },
+          { decision: "Structure everything around routes", why: "Real deliveries happen as a route of multiple shops, so the app mirrors that daily workflow.", result: "Shop-wise and route-wise performance views come naturally from the data." },
+          { decision: "Downloadable PDF sales details", why: "Owners need records they can share and keep outside the app.", result: "Sales data leaves the app as a ready-to-use report." }
+        ],
+        whatsNext: "Potential next steps: add exception handling for short or excess deliveries, delivery-status history, low-stock alerts, and clearer reconciliation views. Strengthen production access controls with Firebase Security Rules that enforce owner/driver permissions, validate who can update assigned deliveries, and restrict access to each user's authorized data.",
+        sandboxHtml: `
+          <div class="bg-crosswordCream border-2 border-zineInk rounded-xl p-4 sm:p-5">
+            <p class="font-mono text-xs font-bold uppercase text-typewriterRed mb-3">DISTRIBUTION WORKFLOW · PRODUCT OVERVIEW</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 text-center font-mono text-[11px] font-bold">
+              <div class="bg-white border-2 border-zineInk rounded-lg p-3"><div class="text-typewriterRed mb-1">01 · OWNER</div>Configure products, routes, shops, drivers & stock</div>
+              <div class="bg-white border-2 border-zineInk rounded-lg p-3"><div class="text-typewriterRed mb-1">02 · DRIVER</div>Sign in and deliver assigned stock along the route</div>
+              <div class="bg-white border-2 border-zineInk rounded-lg p-3"><div class="text-typewriterRed mb-1">03 · SHOP</div>Scan QR and confirm received quantities</div>
+            </div>
+            <div class="mt-3 bg-zineInk text-zineMustard rounded-lg p-3 text-center font-mono text-xs font-bold">FIREBASE DATA → PERFORMANCE VIEWS → PDF SALES REPORTS</div>
+            <p class="mt-2 text-[10px] text-zineInk/70 font-mono">PRODUCT ADOPTION REPORTED: 100 USERS</p>
+          </div>
+        `
+      },
+      {
+        tag: "CASE STUDY 02 / 04 · PRODUCT ANALYTICS",
         title: "Social Media Product Analytics",
         badge: "DAU/MAU · COHORTS · FUNNELS",
         problem: "Understanding how users genuinely interact with a social media product beyond surface-level vanity activity counts.",
@@ -1798,7 +1875,7 @@
         `
       },
       {
-        tag: "CASE STUDY 02 / 03 · HYBRID RAG SYSTEM",
+        tag: "CASE STUDY 03 / 04 · HYBRID RAG SYSTEM",
         title: "Advanced RAG Documentation Assistant",
         badge: "PYTHON · LANGGRAPH · CHROMADB · BM25 · GPT-4O-MINI",
         problem: "Finding accurate, trustworthy answers across dense technical documentation is slow—traditional keyword search misses intent, while pure vector search misses exact terms and risks LLM hallucinations.",
@@ -1822,7 +1899,7 @@
         `
       },
       {
-        tag: "CASE STUDY 03 / 03 · RESPONSIBLE AI INFRASTRUCTURE",
+        tag: "CASE STUDY 04 / 04 · RESPONSIBLE AI INFRASTRUCTURE",
         title: "Healthcare MCP Server – AI Powered",
         badge: "PYTHON · FASTMCP · SQLITE · SQL · STREAMABLE HTTP",
         problem: "Healthcare data stored in relational SQLite databases requires structured, reliable access—giving AI clients unrestricted SQL execution creates data integrity and safety risks.",
@@ -1880,6 +1957,21 @@
             <p class="text-sm text-zineInk/90 leading-relaxed">${cs.whatIBuilt}</p>
           </div>
         </div>
+
+        ${cs.decisions ? `
+        <div class="bg-crosswordCream border-2 border-zineInk rounded-xl p-4 sm:p-5">
+          <p class="font-mono text-xs font-bold uppercase text-typewriterRed mb-3">PRODUCT DECISIONS · WHAT I CHOSE &amp; WHY</p>
+          <div class="space-y-3">
+            ${cs.decisions.map((d, n) => `
+              <div class="bg-white border-2 border-zineInk rounded-lg overflow-hidden">
+                <div class="bg-zineMustard border-b-2 border-zineInk px-3 py-1.5 font-mono text-[11px] font-bold uppercase text-zineInk">D${n + 1} · ${d.decision}</div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 text-sm text-zineInk/90">
+                  <div class="p-3 sm:border-r-2 border-zineInk/20"><p class="font-mono text-[10px] font-bold uppercase text-[#1D4ED8] mb-0.5">WHY →</p>${d.why}</div>
+                  <div class="p-3 border-t-2 sm:border-t-0 border-zineInk/20"><p class="font-mono text-[10px] font-bold uppercase text-emerald-800 mb-0.5">RESULT →</p>${d.result}</div>
+                </div>
+              </div>`).join('')}
+          </div>
+        </div>` : ''}
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="bg-manilaLight border-2 border-zineInk rounded-xl p-4">
@@ -2174,3 +2266,4 @@
   </script>
 </body>
 </html>
+
